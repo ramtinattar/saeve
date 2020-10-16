@@ -1,0 +1,58 @@
+<div class="question">
+  <h3 data-handle="{{ block.settings.handle }}" class="inlineB typist-{{ block.id }}">{{ block.settings.title }}</h3>
+  
+  {% unless block.settings.explain == blank %}
+  <h4 class="inlineCommentary littleExplainBot">{{ block.settings.explain }}</h4>
+  {% endunless %}
+  
+  
+  <div class="choice {% unless block.settings.choice4 == "" or block.settings.choice4 == nil %}fourPart{% endunless %}">
+    
+    <div data-handle="{{ block.settings.handle1 }}" class="miniChoice unique-choice enterButton">
+      <button data-answer="{{ block.settings.choice1 | handle }}" class="choice-image">
+        <img class="pictoQuestion" src="{{ block.settings.image1 | img_url: 'original' }}" alt="{{ block.settings.image1.alt }}">
+      </button>
+      <h5 class="explainChoice">{{ block.settings.choice1 }}</h5>
+    </div>
+    
+    <div data-handle="{{ block.settings.handle2 }}" class="miniChoice unique-choice enterButton">
+      <button data-answer="{{ block.settings.choice2 | handle }}" class="choice-image">
+        <img class="pictoQuestion" src="{{ block.settings.image2 | img_url: 'original' }}" alt="{{ block.settings.image2.alt }}">
+      </button>
+      <h5 class="explainChoice">{{ block.settings.choice2 }}</h5>
+    </div>
+    
+    {% unless block.settings.choice3 == "" or block.settings.choice3 == nil %}
+    <div data-handle="{{ block.settings.handle3 }}" class="miniChoice minChoiceSecondLine unique-choice enterButton">
+      <button data-answer="{{ block.settings.choice3 | handle }}" class="choice-image">
+        <img class="pictoQuestion" src="{{ block.settings.image3 | img_url: 'original' }}" alt="{{ block.settings.image3.alt }}">
+      </button>
+      <h5 class="explainChoice">{{ block.settings.choice3 }}</h5>
+    </div>
+    {% endunless %}
+    
+    {% unless block.settings.choice4 == "" or block.settings.choice4 == nil %}
+    <div data-handle="{{ block.settings.handle4 }}" class="miniChoice minChoiceSecondLine unique-choice enterButton">
+      <button data-answer="{{ block.settings.choice4 | handle }}" class="choice-image">
+        <img class="pictoQuestion" src="{{ block.settings.image4 | img_url: 'original' }}" alt="{{ block.settings.image4.alt }}">
+      </button>
+      <h5 class="explainChoice">{{ block.settings.choice4 }}</h5>
+    </div>
+    {% endunless %}
+    
+    
+  </div>
+</div>
+<script>
+  var choice4 = "";
+  $('.enterButton').click(function() {
+  	choice4 = $(this).attr('data-answer');
+  });
+  
+  function validateBlockB{{ block.id }}(currentBlock) {
+    $('.owl-next').click();
+    currentBlock++;
+    choice4 = "";
+    return currentBlock;
+  }
+</script>

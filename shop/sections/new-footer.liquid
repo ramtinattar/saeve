@@ -1,0 +1,187 @@
+<section class="custom-footer">
+  <div class="container-men">
+    <img class="men" src="https://cdn.shopify.com/s/files/1/0049/9908/6193/files/HOMME_400x.png?2764664675012616683" alt="HOMME">
+  </div>
+  <div class="container-alch">
+    <img class="alch" src="https://cdn.shopify.com/s/files/1/0049/9908/6193/files/Calque_112_200x.png?2764664675012616683" alt="Calque_112">
+  </div>
+  <div class="container-footer">
+    <div class="footer__blocks col-xs-6">
+      {% for block in section.blocks %}
+      {% if block.type == "text" %}
+
+      <div class="footer__first footer__block--text">
+        <p class="Footer__Title Heading link-title u-h2 col-md-3"> {{ block.settings.title }}</p>
+        {%- if block.settings.show_social_media -%}
+          {% include 'social-media', class: 'col-md-9', spacing: 'loose' %}
+        {%- endif -%}
+
+        <div class="col-md-12">
+          <div class="main SectionHeader__Heading u-h2">{{ section.settings.title }}</div>
+          <p class="footer_text_content-trigger text-center u-h5">Découvrir Saeve &#9660;</p>
+          <div class="footer_text_content" style="display:none">
+            {{ block.settings.content }}
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 Form__Alert">
+        <div class="footer__block--links">
+          {%- assign linklist = linklists[block.settings.menu] -%}
+
+          {%- if linklist != empty -%}
+          <p class="Footer__Title Heading link-title u-h2">{{ linklist.title | escape }}</p>
+
+          <ul class="Footer__Linklist">
+            {%- for link in linklist.links -%}
+            <li class="Linklist__Item">
+              <a href="{{ link.url }}" class="Link Link--primary">{{ link.title | escape }}</a>
+            </li>
+            {%- endfor -%}
+          </ul>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <p>Et surtout, n'oubliez pas de trier vos emballages !<br /></p>
+        <div class="Form__Alert text-center">
+          <img src="https://cdn.shopify.com/s/files/1/0209/8325/1008/files/triman_saeve_68x68_07fa9724-ed91-4eb8-97a0-15b747f9efeb.jpg?4606" alt="triman" style="margin: 0px 15px 15px 0px;" height="34" width="34" />
+          <span class="footer_recyclage_content-trigger text-center u-h5">Consignes de recyclage &#9660;</span>
+          <div class="footer_recyclage_content" style="display:none">
+            <img src="https://cdn.shopify.com/s/files/1/0209/8325/1008/files/CONSIGNE_DE_RECYCLAGE_SAEVE.jpg?v=1598975411" alt="CONSIGNE_DE_RECYCLAGE_SAEVE" style="width: 100%;" />
+          </div>
+        </div>
+        <p class="SectionHeader__Heading u-h2">{{ block.settings.social_title }}</p>
+      </div>
+
+
+      <div class="footer_block--news col-md-12">
+        {%- form 'customer', id: 'footer-newsletter', class: 'Footer__Newsletter Form' -%}
+          {%- if form.posted_successfully? -%}
+              <p class="Form__Alert Alert Alert--success">{{ 'footer.newsletter.success' | t }}</p>
+          {%- else -%}
+              {%- if form.errors -%}
+                  <p class="Form__Alert Alert Alert--error">{{ form.errors.messages['email'] }}</p>
+              {%- endif -%}
+        	    <p class="footer_block--newsText"><b>{{ block.settings.newsText }}</b></p>
+              <input type="hidden" name="contact[tags]" value="newsletter">
+              <input type="email" name="contact[email]" class="Form__Input" aria-label="{{ 'footer.newsletter.input' | t }}" placeholder="{{ 'footer.newsletter.input' | t }}" required>
+              <button type="submit" class="Form__Submit Button Button--primary">{{ 'footer.newsletter.submit' | t }}</button>
+          {%- endif -%}
+        {%- endform -%}
+      </div>
+      {% endif %}
+      {% if block.type == "menu_bottom" %}
+      <div class="footer__block--bottom col-xs-12">
+        <div class="footer__block--bottonMenu">
+          {%- assign linklist = linklists[block.settings.menu_bottom] -%}
+
+          {%- if linklist != empty -%}
+
+          <ul class="Linklist">
+            {%- for link in linklist.links -%}
+            <li class="LinkCustom">
+              <a href="{{ link.url }}" class="Link Link--primary">{{ link.title | escape }}</a>
+            </li>
+            {%- endfor -%}
+          </ul>
+          {%- endif -%}
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "custom-footer",
+  "class": "shopify-section--footer",
+  "settings": [
+		{
+          "type": "richtext",
+          "id": "title",
+          "label": "Main title",
+          "default": "<p>Des soins extraordinaires,<br>à base de plantes (pas si) ordinaires !</p>"
+        }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Saeve"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>Saeve, première marque de cosmétiques transmettant à la peau, les pouvoirs uniques brevetés (Brevet Immunox ®) de la Sève fraîche de Bouleau bio ainsi que du miraculeux Chaga bio, «champignon de l’immortalité» et d’autres ingrédients naturels surprenants, 100% bluffants… MADE IN FRANCE</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_social_media",
+          "label": "Show social media",
+          "info": "Make sure to have properly configured your social media in the theme settings.",
+          "default": true
+        },
+  		{
+          "type": "text",
+          "id": "social_title",
+          "label": "Title social media",
+          "default": "Saeve you soon"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu",
+          "info": "This menu won't show dropdown items."
+        },
+		{
+		  "type": "text",
+		  "id": "newsText",
+		  "label": "Newsletters description",
+		  "default": "Rejoignez le cercle des Belles Plantes et recevez nos Saeveletters :-)"
+		}
+      ]
+    },
+    {
+        "type": "menu_bottom",
+        "name": "Menu Bottom",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "link_list",
+            "id": "menu_bottom",
+            "label": "Menu bottom",
+            "info": "This menu won't show dropdown items."
+          }
+        ]
+      }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "text",
+        "settings": {}
+      },
+      {
+        "type": "menu_bottom",
+        "settings": {}
+      }
+    ]
+  }
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

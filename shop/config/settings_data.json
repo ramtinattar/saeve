@@ -1,0 +1,3293 @@
+{
+  "current": {
+    "pluginseo_pageTitleTruncateChars": "999",
+    "pluginseo_pageTitleEnableAppender": true,
+    "pluginseo_pageTitleAppenderTemplate": "| %% shop.name %%",
+    "pluginseo_pageTitleAppenderTargetLength": "70",
+    "pluginseo_pageTitleTemplateApplyToAll": true,
+    "pluginseo_pageTitleDefaultTemplate": "%% page_title %%",
+    "pluginseo_pageTitleIndexTemplate": "%% shop.name %%",
+    "pluginseo_pageTitlePageTemplate": "",
+    "pluginseo_pageTitleSearchTemplate": "Buy %% search.terms %% from %% shop.name %%",
+    "pluginseo_pageTitleProductTemplate": "%% Produits - Saeve %%",
+    "pluginseo_pageTitleCollectionTemplate": "%% Collection - Saeve %%",
+    "pluginseo_pageTitleCatalogTemplate": "",
+    "pluginseo_pageTitleBlogTemplate": "",
+    "pluginseo_pageTitleArticleTemplate": "",
+    "pluginseo_pageTitle404Template": "",
+    "pluginseo_metaDescriptionTruncateChars": "170",
+    "pluginseo_metaDescriptionTemplateApplyToAll": false,
+    "pluginseo_metaDescriptionDefaultTemplate": "%% page_description %%",
+    "pluginseo_metaDescriptionIndexTemplate": "",
+    "pluginseo_metaDescriptionPageTemplate": "",
+    "pluginseo_metaDescriptionSearchTemplate": "",
+    "pluginseo_metaDescriptionProductTemplate": "",
+    "pluginseo_metaDescriptionCollectionTemplate": "",
+    "pluginseo_metaDescriptionCatalogTemplate": "",
+    "pluginseo_metaDescriptionBlogTemplate": "",
+    "pluginseo_metaDescriptionArticleTemplate": "",
+    "pluginseo_metaDescription404Template": "",
+    "pluginseo_structuredDataDisplayLogo": false,
+    "pluginseo_structuredDataSocialProfileLinks": "",
+    "single_product_purchase": "",
+    "products_purchase_message": "Attention, vous ne pouvez pas mettre plus d'une unité de ce produit au panier.",
+    "product_visible_none": "",
+    "products_visibility_message": "Désolé! Le descriptif de cette page produit n'est pas disponible.",
+    "product_ref_none": "",
+    "read_more": "Lire la suite",
+    "read_less": "Réduire",
+    "heading_color": "#000000",
+    "text_color": "#000000",
+    "text_light_color": "#939393",
+    "link_color": "#323232",
+    "background": "#ffffff",
+    "light_background": "#ffffff",
+    "product_on_sale_color": "#f94c43",
+    "button_background": "#64aa77",
+    "button_text_color": "#ffffff",
+    "header_background": "#ffffff",
+    "header_heading_color": "#000000",
+    "header_light_color": "#939393",
+    "footer_background": "#ffffff",
+    "footer_heading_color": "#000000",
+    "footer_text_color": "#939393",
+    "navigation_background": "#ffffff",
+    "navigation_text_color": "#000000",
+    "newsletter_popup_background": "#ffffff",
+    "newsletter_popup_text_color": "#1c1b1b",
+    "secondary_elements_background": "#000000",
+    "secondary_elements_text_color": "#ffffff",
+    "heading_font": "futura_n4",
+    "heading_size": "large",
+    "uppercase_heading": false,
+    "text_font": "century_gothic_n4",
+    "base_text_font_size": 15,
+    "currency_conversion_enabled": false,
+    "currency_conversion_round_amounts": true,
+    "currency_conversion_supported_currencies": "USD",
+    "currency_conversion_money_format": "money_format",
+    "show_page_transition": true,
+    "show_image_zooming": true,
+    "show_element_staggering": true,
+    "search_mode": "product,article,page",
+    "size_chart_page": "",
+    "product_show_price_on_hover": false,
+    "product_show_secondary_image": true,
+    "product_info_alignment": "center",
+    "product_image_size": "tall",
+    "product_list_horizontal_spacing": "extra_large",
+    "product_list_vertical_spacing": "extra_large",
+    "cart_type": "page",
+    "cart_enable_notes": false,
+    "cart_show_free_shipping_threshold": true,
+    "cart_free_shipping_threshold": 30,
+    "share_image": "",
+    "social_facebook": "https:\/\/www.facebook.com\/saevefr\/",
+    "social_twitter": "",
+    "social_google_plus": "",
+    "social_pinterest": "https:\/\/www.pinterest.fr\/saeve_france\/",
+    "social_instagram": "https:\/\/www.instagram.com\/saeve_france\/?hl=fr",
+    "social_vimeo": "",
+    "social_tumblr": "",
+    "social_youtube": "https:\/\/www.youtube.com\/channel\/UCZsAohGcx2BQdY4H_uo-WJg\/videos",
+    "social_linkedin": "",
+    "social_snapchat": "",
+    "social_fancy": "",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "checkout_header_image": "shopify:\/\/shop_images\/header-passage-caisse_f2da209c-82df-4bef-b0d7-dd0b554527fa.jpg",
+    "checkout_logo_image": "shopify:\/\/shop_images\/LogoSaeve_2016-01.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#323232",
+    "checkout_button_color": "#000000",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "404": {
+        "type": "404",
+        "settings": {
+          "title": "OUPS !",
+          "subtitle1": "Il semblerait que cette page n'existe pas ou plus.",
+          "subtitle2": "<p>Enfourchez notre cerf ador&eacute;, il vous ram&egrave;nera &agrave; la<a href=\"\/\" title=\"https:\/\/saeve-france.myshopify.com\/\"> page d'accueil<\/a>.<\/p>"
+        }
+      },
+      "sidebar-menu": {
+        "type": "sidebar-menu",
+        "settings": {
+          "primary_menu": "sidebar-menu",
+          "secondary_menu": "footer",
+          "show_social_media": true
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "enable_bar": false,
+          "home_page_only": false,
+          "background": "#000000",
+          "text_color": "#ffffff",
+          "content": ""
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1545086646413": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "Produits",
+              "push_1_image": "shopify:\/\/shop_images\/slide_pisum_kit_offres_750x1100_131e197f-3c0d-45a7-a386-fd01c85bd8c6.jpg",
+              "push_1_heading": "LES RITUELS ÉCLAT",
+              "push_1_subheading": "",
+              "push_1_url": "shopify:\/\/collections\/exclu-web",
+              "push_2_image": "shopify:\/\/shop_images\/slide_malva_offrerituel_masque-30ml_750x1100_cfb24d2b-3eea-4bcd-97ab-9cb9acc46c86.jpg",
+              "push_2_heading": "LE RITUEL HYDRATANT APAISANT",
+              "push_2_subheading": "",
+              "push_2_url": "https:\/\/saeve.com\/collections\/exclu-web\/products\/le-rituel-hydratant-apaisant",
+              "push_3_heading": "Example heading",
+              "push_3_subheading": "Example sub-heading"
+            }
+          },
+          "1537801407841": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "Histoire",
+              "push_1_image": "shopify:\/\/shop_images\/SSMENU_IL-ETAIT-UNE-FOIS.jpg",
+              "push_1_heading": "Il était une fois...",
+              "push_1_subheading": "",
+              "push_1_url": "shopify:\/\/pages\/il-etait-une-fois",
+              "push_2_image": "shopify:\/\/shop_images\/SSMENU_COULISSESDESAEVE.jpg",
+              "push_2_heading": "Les coulisses",
+              "push_2_subheading": "",
+              "push_2_url": "shopify:\/\/pages\/les-coulisses",
+              "push_3_image": "shopify:\/\/shop_images\/SSMENU_MANIFESTO.jpg",
+              "push_3_heading": "Manifesto",
+              "push_3_subheading": "",
+              "push_3_url": "shopify:\/\/pages\/manifesto"
+            }
+          },
+          "1537803768701": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "Brevet",
+              "push_1_image": "shopify:\/\/shop_images\/SOUSMENU_BREVETIMMUNOX-2.jpg",
+              "push_1_heading": "Le brevet Immunox®",
+              "push_1_subheading": "",
+              "push_1_url": "shopify:\/\/pages\/le-brevet-immunox",
+              "push_2_image": "shopify:\/\/shop_images\/SSMENU_SECRETDEFAB.jpg",
+              "push_2_heading": "Les secrets de fab'",
+              "push_2_subheading": "",
+              "push_2_url": "shopify:\/\/pages\/les-secrets-de-fab",
+              "push_3_image": "shopify:\/\/shop_images\/QQMENU_PHILODEFORMULATION_BREVET-IMMUNOX.jpg",
+              "push_3_heading": "Philosophie de formulation",
+              "push_3_subheading": "",
+              "push_3_url": "shopify:\/\/pages\/philosophie-de-formulation"
+            }
+          }
+        },
+        "block_order": [
+          "1545086646413",
+          "1537801407841",
+          "1537803768701"
+        ],
+        "settings": {
+          "find_us": "Où nous trouver ?",
+          "use_sticky_header": true,
+          "logo": "shopify:\/\/shop_images\/saeve-paris_logo.png",
+          "logo_max_width": 215,
+          "mobile_logo_max_width": 80,
+          "navigation_menu": "main-menu",
+          "navigation_style": "center",
+          "enable_transparent_header": false,
+          "enable_transparent_header_collection": false,
+          "transparent_text_color": "#ffffff",
+          "display_image_made_france": true,
+          "image_made_france": "shopify:\/\/shop_images\/stamp_saeve_madeinfrance.png"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "text",
+            "settings": {
+              "title": "Saeve",
+              "content": "<p>Saeve, the first cosmetic brand to infuse the skin with the unique patented powers (Immunox &reg; Patent) of organic fresh Birch Sap and organic Chaga, &ldquo;mushroom of immortality&rdquo; and other amazing natural ingredients, 100% incredible... MADE IN FRANCE<\/p>",
+              "show_social_media": true
+            }
+          },
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "menu": "footer"
+            }
+          },
+          "footer-2": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter",
+              "content": "<p>Subscribe to our newsletter !<\/p>\n<p>Saeve you soon !<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "footer-2"
+        ],
+        "settings": {
+          "show_payment_methods": true
+        }
+      },
+      "featured-product": {
+        "type": "featured-product",
+        "blocks": {
+          "1550053633639": {
+            "type": "text",
+            "settings": {
+              "product": "serum-botanique-booster-eclat-anti-taches-30-ml",
+              "background-img": "shopify:\/\/shop_images\/perfect-pisum_460x460_6b2f9b55-22cb-409d-8d84-d6a9ea88021c.png",
+              "img-align": "gauche"
+            }
+          },
+          "1550053542927": {
+            "type": "text",
+            "settings": {
+              "product": "serum-botanique-purifiant-anti-imperfections-30-ml",
+              "background-img": "shopify:\/\/shop_images\/pur-paradisi_460x460_478f234e-4455-43e9-a221-c17e9469c114.png",
+              "img-align": "droite"
+            }
+          },
+          "1550137508064": {
+            "type": "text",
+            "settings": {
+              "product": "serum-botanique-hydratant-24h-apaisant-30-ml",
+              "background-img": "shopify:\/\/shop_images\/hydra-malva_460x460_18a562e7-d245-4faf-bb8c-488994d1d65f.png",
+              "img-align": "gauche"
+            }
+          }
+        },
+        "block_order": [
+          "1550053633639",
+          "1550053542927",
+          "1550137508064"
+        ],
+        "settings": {
+          "subheading": "the skin !",
+          "title": "Produits",
+          "show_headings_on_mobile": true,
+          "show_vendor": false,
+          "show_description": false,
+          "description_below_add_to_cart": true,
+          "show_color_swatch": true,
+          "show_color_carousel": true,
+          "show_quantity_selector": true,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 10,
+          "show_payment_button": false,
+          "background_1": "shopify:\/\/shop_images\/Bouleau_saeve_OK.png",
+          "background_2": "shopify:\/\/shop_images\/label__1.png",
+          "background_3": "shopify:\/\/shop_images\/potion.png"
+        }
+      },
+      "blog-posts": {
+        "type": "blog-posts",
+        "disabled": true,
+        "blocks": {
+          "blog-0": {
+            "type": "blog",
+            "settings": {
+              "blog": "journal"
+            }
+          }
+        },
+        "block_order": [
+          "blog-0"
+        ],
+        "settings": {
+          "subheading": "",
+          "title": "In a few words...",
+          "show_category": false,
+          "button_text": ""
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_info": true,
+          "show_collection_image": true,
+          "show_color_swatch": false,
+          "show_vendor": false,
+          "collection_image_size": "normal",
+          "show_sort_by": true,
+          "show_layout_switch": false,
+          "toolbar_position": "top",
+          "filter_position": "sidebar",
+          "filter_mode": "tag",
+          "show_filter_color_swatch": true,
+          "filter_menu": "",
+          "grid_items_per_page": 48,
+          "grid_mobile_items_per_row": "1",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "recently-viewed-products": {
+        "type": "recently-viewed-products",
+        "settings": {
+          "show_section": true,
+          "title": "Récemment consultés",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "collection-footer": {
+        "type": "collection-footer",
+        "settings": {
+          "show_section": false,
+          "image": "",
+          "text_color": "#ffffff",
+          "apply_overlay": true,
+          "title": "Our story",
+          "content": "<p>Add your own custom content to explain your processes...<\/p>"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "blocks": {
+          "1595258933543": {
+            "type": "product_desc_images",
+            "settings": {
+              "featured_product": "masque-2-en-1-gommant-purifiant-75-ml",
+              "image_1": "shopify:\/\/shop_images\/Capture_d_ecran_2020-07-21_a_16.31.39.png",
+              "title_1": "À utiliser en duo avec le Masque Infusion Ré-Hydratant Apaisant [Hydra Malva] pour hydrater et exfolier.",
+              "text_1_1": "<span class=\"description_images-number\">1\/<\/span> Appliquer sur les joues le Masque Infusion Ré-Hydratant Apaisant [Hydra Malva] pour hydrater, repulper et nourrir.",
+              "text_1_2": "<span class=\"description_images-number\">2\/<\/span> Appliquer sur la zone T (nez et front) le Masque 2-en-1 Gommant Purifiant pour exfolier, désincruster et resserrer les pores.",
+              "image_2": "shopify:\/\/shop_images\/Capture_d_ecran_2020-07-21_a_16.31.39.png",
+              "title_2": "L'astuce spéciale \"multi-masking\" #1 : à utiliser en duo avec le Masque Infusion Ré-Hydratant Apaisant [Hydra Malva] pour hydrater et exfolier.",
+              "text_2_1": "<span class=\"description_images-number\">1\/<\/span> Appliquer sur les joues le Masque Infusion Ré-Hydratant Apaisant [Hydra Malva] pour hydrater, repulper et nourrir.",
+              "text_2_2": "<span class=\"description_images-number\">2\/<\/span> Appliquer sur la zone T (nez et front) le Masque 2-en-1 Gommant Purifiant pour exfolier, désincruster et resserrer les pores.",
+              "image_3": "shopify:\/\/shop_images\/Capture_d_ecran_2020-07-21_a_16.31.39.png",
+              "title_3": "L'astuce spéciale \"multi-masking\" #2 : à utiliser en duo avec le Masque Peeling Éclat Minute [Perfect Pisum] pour redonner de l'éclat et purifier.",
+              "text_3_1": "<span class=\"description_images-number\">1\/<\/span> Appliquer sur les joues le Masque Peeling Éclat Minute [Perfect Pisum] pour exfolier et réveiller le teint.",
+              "text_3_2": "<span class=\"description_images-number\">2\/<\/span> Appliquer sur la zone T (nez et front) le Masque 2-en-1 Gommant Purifiant [Pur Paradisi] pour exfolier, désincruster et resserrer les pores."
+            }
+          }
+        },
+        "block_order": [
+          "1595258933543"
+        ],
+        "settings": {
+          "show_share_buttons": true,
+          "show_vendor": false,
+          "description_below_add_to_cart": true,
+          "show_color_swatch": true,
+          "show_color_carousel": false,
+          "show_quantity_selector": true,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 3,
+          "show_payment_button": false,
+          "image_size": "small",
+          "enable_image_zoom": true,
+          "show_thumbnails": true,
+          "reviews_enabled": false,
+          "featured_image_size": "large"
+        }
+      },
+      "related-products": {
+        "type": "related-products",
+        "settings": {
+          "show_section": true,
+          "title": "Complétez votre routine beauté",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": false,
+          "show_only_on_index": true,
+          "show_only_for_visitors": true,
+          "show_only_once": true,
+          "title": "Popup",
+          "content": "<p>You can use this popup to display some useful information to your customers.<\/p>",
+          "show_newsletter": true,
+          "apparition_delay": 5
+        }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "1537782838087": {
+            "type": "separator",
+            "settings": {
+              "title": "Marque et produits"
+            }
+          },
+          "page-faq-template-1": {
+            "type": "question",
+            "settings": {
+              "title": "Où sont fabriqués les produits Saeve ?",
+              "answer": "<p>L&rsquo;ensemble des produits Saeve sont fabriqu&eacute;s en France. Les formules sont d&rsquo;abord &eacute;labor&eacute;es avec amour par notre laboratoire exclusif situ&eacute; en r&eacute;gion parisienne, puis les produits sont fabriqu&eacute;s dans nos usines notamment situ&eacute;es en Normandie, &Icirc;le de France et Corr&egrave;ze. Par ailleurs, les ingr&eacute;dients que nous utilisons dans nos produits sont directement s&eacute;lectionn&eacute;s dans les campagnes fran&ccedil;aises. Vous pourrez d&rsquo;ailleurs voir la mention &laquo;&nbsp;made in France&nbsp;&raquo; sur tous nos produits.<\/p>"
+            }
+          },
+          "page-faq-template-2": {
+            "type": "question",
+            "settings": {
+              "title": "Les produits Saeve sont-ils bio?",
+              "answer": "<p>Nous ne sommes pas bio m&ecirc;me si nous en avons tous les attributs! Pas de silicone, pas de PEG, pas d&rsquo;huile min&eacute;rale, pas de ph&eacute;noxy&eacute;thanol, pas de colorant, pas de sodium laureth sulfate, pas de gluten&hellip; Nous avons n&eacute;anmoins voulu une tr&egrave;s grande performance pour nos soins, ainsi nous avons choisi pour certains produits d&rsquo;incorporer les actifs les plus puissants du march&eacute; comme les tripeptides pour l&rsquo;anti-&acirc;ge et la fermet&eacute; (non-bio mais inoffensifs pour la peau), les AHA (une combinaison d&rsquo;acides de fruits qui exfolient la peau en douceur) ou bien les ferments (des actifs biotechnologiques qui d&eacute;cuplent l&rsquo;efficacit&eacute; de nos soins).<\/p>"
+            }
+          },
+          "page-faq-template-3": {
+            "type": "question",
+            "settings": {
+              "title": "Testez-vous vos produits sur des animaux ?",
+              "answer": "<p>Absolument pas. La r&eacute;glementation europ&eacute;enne l&rsquo;interdit. Nous testons nos produits par des m&eacute;thodes alternatives sur volontaires. Les tests sont d&rsquo;ailleurs r&eacute;alis&eacute;s par un laboratoire ind&eacute;pendant pour une totale transparence.<\/p>"
+            }
+          },
+          "page-faq-template-5": {
+            "type": "question",
+            "settings": {
+              "title": "Les produits Saeve contiennent-ils des silicones et\/ou des parabènes ?",
+              "answer": "<p>Nous avons banni tous les ingr&eacute;dients potentiellement nocifs pour la peau ou l&rsquo;environnement pour offrir une charte formulatoire avec 0% de silicones, parab&egrave;nes, sodium laureth sulfate, ph&eacute;noxy&eacute;thanol, gluten, PEG, huiles min&eacute;rales et ingr&eacute;dients d&rsquo;origine animale. Tous ces ingr&eacute;dients ont &eacute;t&eacute; substitu&eacute;s par des ingr&eacute;dients d&rsquo;origine naturelle, surpuissants, rigoureusement s&eacute;lectionn&eacute;s par nos experts et plus respectueux de la peau. Nos formules ont fait l&rsquo;objet de recherches tr&egrave;s pouss&eacute;es par nos laboratoires et ont &eacute;t&eacute; soumises &agrave; de nombreux tests (ophtalmologiques, dermatologiques&hellip;) pour garantir une tol&eacute;rance irr&eacute;prochable.<\/p>"
+            }
+          },
+          "page-faq-template-6": {
+            "type": "question",
+            "settings": {
+              "title": "Le étuis carton Saeve sont-ils recyclables ?",
+              "answer": "<p>Oui et heureusement ! Tous nos &eacute;tuis sont fabriqu&eacute;s avec du papier certifi&eacute; FSC (&laquo;&nbsp;<em>Forest Stewardship Council<\/em>&laquo;&nbsp;) qui assure que la production de bois ou d&rsquo;un produit &agrave; base de bois respecte les proc&eacute;dures garantissant la gestion durable des for&ecirc;ts. Nous utilisons &eacute;galement une encre qui est v&eacute;g&eacute;tale, en quantit&eacute; relativement faible pour le d&eacute;cor de tous nos &eacute;tuis.<\/p>"
+            }
+          },
+          "page-faq-template-8": {
+            "type": "question",
+            "settings": {
+              "title": "Combien de temps puis-je conserver mon produit après ouverture ?",
+              "answer": "<p>Saeve s&rsquo;est engag&eacute; &agrave; remplacer tous les conservateurs chimiques controvers&eacute;s uniquement par des conservateurs efficaces et respectueux de la peau.<br>Ils permettent d&rsquo;assurer une dur&eacute;e de vie &agrave; nos produits, qui est similaire &agrave; celle des cosm&eacute;tiques conventionnelles.<\/p>\n<p>A temp&eacute;rature ambiante, nos produits se conservent de 9 &agrave; 12 mois apr&egrave;s ouverture :<br>&ndash; Cr&egrave;mes Riches, Cr&egrave;mes Corps (conditionn&eacute;es en pot) et Contours des Yeux (zones fragiles) : 9 Mois<br>&ndash; S&eacute;rums, Cr&egrave;mes, Eaux Micellaires, Masques, Lotions, Laits D&eacute;maquillants, Gels Nettoyants, Cr&egrave;mes Mains, Mousses, Correcteur Intensif, Fluide, Gels Douches, Laits Corps : 12 Mois<\/p>"
+            }
+          },
+          "1537783033133": {
+            "type": "question",
+            "settings": {
+              "title": "J’ai la peau sensible. Puis-je utiliser les produits Saeve ?",
+              "answer": "<p>Nous avons cr&eacute;e une gamme sp&eacute;ciale test&eacute;e sur peaux sensibles sous contr&ocirc;le dermatologique : c&rsquo;est la gamme hydratante Hydra Malva &agrave; base de mauve titr&eacute;e apaisante.<\/p>"
+            }
+          },
+          "1537783053047": {
+            "type": "question",
+            "settings": {
+              "title": "Je suis allergique au pollen de Bouleau. Y a-t-il un risque ?",
+              "answer": "<p>Non aucun ! Il n&rsquo;y a pas de pollen dans la s&egrave;ve de Bouleau ascendante. Elle est en effet r&eacute;colt&eacute;e au mois de mars, c&rsquo;est-&agrave;-dire avant la pollinisation. Les tests men&eacute;s sur l&rsquo;analyse de cette s&egrave;ve d&eacute;montrent qu&rsquo;elle ne contient aucune trace de pollen.<\/p>"
+            }
+          },
+          "1537783072354": {
+            "type": "question",
+            "settings": {
+              "title": "Quelle est la différence entre la sève et le jus de Bouleau ?",
+              "answer": "<p>Attention, ce n&rsquo;est pas la m&ecirc;me chose! Le jus de Bouleau est obtenu en pressant les feuilles de l&rsquo;arbre r&eacute;colt&eacute;es &agrave; la fin du printemps. Il poss&egrave;de une double action drainante et d&eacute;purative mais il est n&eacute;anmoins amer au go&ucirc;t. Alors que la s&egrave;ve de Bouleau est quant &agrave; elle extraite, &eacute;galement au printemps, selon une technique traditionnelle, en per&ccedil;ant un petit trou dans le tronc (qui ne d&eacute;grade en aucun cas l&rsquo;arbre), et en laissant la s&egrave;ve s&rsquo;&eacute;couler dans un r&eacute;cipient. Cette derni&egrave;re poss&egrave;de des vertus anti-oxydante, d&eacute;toxifiante, remin&eacute;ralisante et revitalisante.<\/p>"
+            }
+          },
+          "1537783100288": {
+            "type": "question",
+            "settings": {
+              "title": "Pouvez-vous m’envoyer des doses d’essai ?",
+              "answer": "<p>D&egrave;s que nous le pouvons, nous offrons des doses d&rsquo;essai &agrave; chaque achat, sous r&eacute;serve des stocks disponibles. Si vous le pouvez, nous vous invitons &agrave; vous rendre directement dans l&rsquo;un de nos points de vente le plus proche de chez vous (consultez la page&nbsp;<a href=\"http:\/\/saeve.com\/pages\/ou-nous-trouver\/\">O&ugrave; nous trouver ?<\/a>). Une conseill&egrave;re se fera un plaisir de vous faire d&eacute;couvrir les produits adapt&eacute;s &agrave; votre type de peau et pourra vous remettre des doses d&rsquo;essai, sous r&eacute;serve des stocks disponibles.<\/p>"
+            }
+          },
+          "1582276306336": {
+            "type": "question",
+            "settings": {
+              "title": "Où en est la livraison de mon colis ?",
+              "answer": "<p>Vous pouvez suivre la livraison de votre colis en cliquant sur&nbsp;&nbsp;<a href=\"https:\/\/saeve.com\/pages\/tracking\" title=\"https:\/\/saeve.com\/pages\/tracking\"><strong>Suivre mon colis<\/strong><\/a>.<br>Il vous suffira ensuite de renseigner votre adresse e-mail ou bien, votre num&eacute;ro de suivi.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1537782838087",
+          "page-faq-template-1",
+          "page-faq-template-2",
+          "page-faq-template-3",
+          "page-faq-template-5",
+          "page-faq-template-6",
+          "page-faq-template-8",
+          "1537783033133",
+          "1537783053047",
+          "1537783072354",
+          "1537783100288",
+          "1582276306336"
+        ],
+        "settings": {
+        }
+      },
+      "page-contact-template": {
+        "type": "page-contact-template",
+        "blocks": {
+          "page-contact-template-0": {
+            "type": "text",
+            "settings": {
+              "title": "Téléphone (falcultatif)",
+              "use_long_text": false,
+              "is_required": false
+            }
+          },
+          "1540934799988": {
+            "type": "dropdown",
+            "settings": {
+              "title": "Objet",
+              "values": "Informations & conseils produits, Presse, Autre demande"
+            }
+          }
+        },
+        "block_order": [
+          "page-contact-template-0",
+          "1540934799988"
+        ],
+        "settings": {
+        }
+      },
+      "1537790264860": {
+        "type": "featured-product",
+        "disabled": true,
+        "settings": {
+          "subheading": "",
+          "title": "Produit",
+          "show_headings_on_mobile": true,
+          "show_vendor": false,
+          "show_description": true,
+          "description_below_add_to_cart": false,
+          "show_color_swatch": true,
+          "show_color_carousel": false,
+          "show_quantity_selector": true,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 0,
+          "show_payment_button": false
+        }
+      },
+      "1537792773171": {
+        "type": "text-with-image",
+        "settings": {
+          "subheading": "",
+          "title": "Pauline Bony, fondatrice de S[aè]ve",
+          "image": "shopify:\/\/shop_images\/pauline-bony_fondatrice_700x_0ba5b09a-f496-4840-887c-85be91b76a27.jpg",
+          "image_position": "left",
+          "content": "<p>Découvrez comment le secret des femmes de ma famille et ma passion pour la cosmétique botanique m’ont amenée à aborder la beauté autrement. Et comment nous sommes parvenus à mettre tous les super pouvoirs d’un arbre extraordinaire dans un flacon !<\/p>",
+          "link_text": "En savoir plus",
+          "link_url": "shopify:\/\/pages\/il-etait-une-fois"
+        }
+      },
+      "1537793074458": {
+        "type": "instagram-feed",
+        "disabled": true,
+        "settings": {
+          "subheading": "@saeve_france",
+          "title": "Saeve you soon",
+          "access_token": "https:\/\/www.instagram.com\/saeve_france",
+          "image_count": 15,
+          "button_text": ""
+        }
+      },
+      "1537801940276": {
+        "type": "testimonials",
+        "disabled": true,
+        "blocks": {
+          "1537801940276-1": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p><strong>The urban close protection<\/strong><\/p><p>[Detox Officinale]<\/p>"
+            }
+          },
+          "1537801940276-2": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p><strong>The skin brought to light<\/strong><\/p><p>[Perfect Pisum]<\/p>"
+            }
+          },
+          "1537802189286": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p><strong>The natural rejuvenating cure<\/strong><\/p><p>[Lift Pinaster]<\/p>"
+            }
+          },
+          "1537801940276-0": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p><strong>The invigorating and dynamic boost<\/strong><\/p><p>[Tonus citrus]<\/p>"
+            }
+          },
+          "1537802220227": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p><strong>The extraordinary hydration bath<\/strong><\/p><p>[Hydra Malva]<\/p>"
+            }
+          },
+          "1538145197314": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p><strong>The body<\/strong><\/p><p>[Relax Rheum]<\/p>"
+            }
+          },
+          "1540983890913": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p><strong>The purifiying cure which transforms the skin<\/strong><\/p><p>[Pur Paradisi]<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1537801940276-1",
+          "1537801940276-2",
+          "1537802189286",
+          "1537801940276-0",
+          "1537802220227",
+          "1538145197314",
+          "1540983890913"
+        ],
+        "settings": {
+          "autoplay": true,
+          "cycle_speed": 4,
+          "background": "#f7f7f7",
+          "text_color": "#1c1b1b"
+        }
+      },
+      "featured-collections": {
+        "type": "featured-collections",
+        "disabled": true,
+        "blocks": {
+          "featured-collection-0": {
+            "type": "collection",
+            "settings": {
+              "title": "",
+              "grid_items_count": 2,
+              "button_text": "See other products"
+            }
+          },
+          "1538097906883": {
+            "type": "collection",
+            "settings": {
+              "title": "",
+              "grid_items_count": 8,
+              "button_text": "View all products"
+            }
+          }
+        },
+        "block_order": [
+          "featured-collection-0",
+          "1538097906883"
+        ],
+        "settings": {
+          "title": "Our favorites",
+          "layout_mode": "carousel",
+          "show_product_info": true,
+          "show_vendor": true,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "image_size": "normal",
+          "add_spacing": true,
+          "expand_collection": false,
+          "apply_overlay": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
+      },
+      "popup-youtube": {
+        "type": "popup-youtube",
+        "settings": {
+          "isActivate": false,
+          "time": "15000",
+          "new_popup": "30",
+          "id": "XyU-i0qxs2w"
+        }
+      },
+      "1540937027111": {
+        "type": "instafeed-zerance",
+        "disabled": true,
+        "settings": {
+          "access_token_insta": "",
+          "title": "Des instantanés très nature"
+        }
+      },
+      "ingredients": {
+        "type": "ingredients",
+        "blocks": {
+          "1541689061593": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Acide Alpha-Hydroxylé (AHA)",
+              "image": "shopify:\/\/shop_images\/AHA_500x500_98877b31-dc6c-4b99-8c47-31c74f83b4ce.jpg",
+              "description": "<p>Orange, Citron, Myrtille&hellip; Cela pourrait ressembler &agrave; une salade de fruits, &agrave; la diff&eacute;rence qu&rsquo;il s&rsquo;agit en r&eacute;alit&eacute; d&rsquo;un cocktail d&rsquo;AHA surpuissant qui&nbsp;<strong>exfolie en douceur<\/strong>&nbsp;et&nbsp;<strong>d&eacute;barrasse des cellules mortes, points noirs et taches<\/strong>&nbsp;pour retrouver une jolie peau de b&eacute;b&eacute;.<\/p>",
+              "product1": "serum-botanique-nuit-micro-peel-peau-neuve-30-ml",
+              "product2": "creme-lissante-infusion-d-eclat-40-ml",
+              "product3": "masque-peeling-eclat-minute-75-ml"
+            }
+          },
+          "1541689097158": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Acide hyaluronique",
+              "image": "shopify:\/\/shop_images\/ACIDEHYALURONIQUE_500x500_e7fd712c-45e6-4c51-b1b0-e423109c1a7f.jpg",
+              "description": "<p>Splash ! V&eacute;ritable bombe d&rsquo;hydratation, il&nbsp;<strong>maintient l&rsquo;eau au c&oelig;ur des cellules<\/strong>&nbsp;et permet de&nbsp;<strong>reconstituer les structures de la peau<\/strong>pour lui&nbsp;<strong>redonner toute son &eacute;lasticit&eacute;<\/strong>. Bon &agrave; savoir : il poss&egrave;de l&rsquo;exceptionnelle facult&eacute; de retenir jusqu&rsquo;&agrave; 1 000 fois son poids en eau&hellip; encore 1 000 autres raisons de le choisir.<\/p>",
+              "product1": "serum-botanique-hydratant-24h-apaisant-30-ml",
+              "product2": "serum-botanique-anti-age-fermete-30-ml",
+              "product3": "creme-nuit-redensifiante-50-ml"
+            }
+          },
+          "1541698456493": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Allantoïne",
+              "image": "shopify:\/\/shop_images\/ALLANTOINE_500x500_f5f28f8a-03b4-4ca4-a607-cc44914b9f01.jpg",
+              "description": "<p>Petite p&eacute;pite v&eacute;g&eacute;tale longtemps utilis&eacute;e pour ses propri&eacute;t&eacute;s&nbsp;<strong>hydratantes, apaisantes et r&eacute;paratrices<\/strong>, elle promet une peau plus douce, plus souple, plus hydrat&eacute;e&hellip; et plus l&rsquo;&eacute;clatante. Que de belles promesses !<\/p>",
+              "product1": "eau-micellaire-detox-500-ml",
+              "product2": "creme-yeux-lissante-15-ml",
+              "product3": "contour-yeux-et-levres-liftant-15-ml"
+            }
+          },
+          "1541689139579": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Amande douce",
+              "image": "shopify:\/\/shop_images\/AMANDEDOUCE_500x500_18f9d1de-f475-42d2-86c6-e49f128f9cf8.jpg",
+              "description": "<p>Tout est dit dans son nom ! La douceur, c&rsquo;est justement son cr&eacute;do gr&acirc;ce &agrave; ses vertus&nbsp;<strong>&eacute;mollientes et apaisantes.<\/strong>&nbsp;<strong>En nourrissant et restructurant la peau<\/strong>, elle constitue l&rsquo;alli&eacute;e id&eacute;ale pour&nbsp;<strong>lutter contre le dess&egrave;chement cutan&eacute;.<\/strong><\/p>",
+              "product1": "creme-riche-desalterante-50-ml",
+              "product2": "lait-demaquillant-confort-250-ml",
+              "product3": "masque-detox-intense-75-ml"
+            }
+          },
+          "1562682546297": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Argile",
+              "image": "shopify:\/\/shop_images\/ARGILE_500x500_a00f94aa-f156-4345-b8a9-7361b90236df.jpg",
+              "description": "<p>Calcium, Aluminium, Silicium, Fer, Magn&eacute;sium, Potassium&nbsp;: l&rsquo;argile verte, l&rsquo;argile la plus riche en <strong>min&eacute;raux<\/strong> est l&rsquo;alli&eacute;e <strong>des peaux grasses<\/strong>&nbsp;! <strong>Purifiante<\/strong>, <strong>matifiante <\/strong>et<strong> remin&eacute;ralisante<\/strong> elle absorbe le s&eacute;bum en exc&egrave;s et les impuret&eacute;s accumul&eacute;es sur la peau.<\/p>",
+              "product1": "masque-2-en-1-gommant-purifiant-75-ml",
+              "product2": "masque-2-en-1-gommant-purifiant-75-ml",
+              "product3": "masque-2-en-1-gommant-purifiant-75-ml"
+            }
+          },
+          "1542274427536": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Beurre végétal",
+              "image": "shopify:\/\/shop_images\/BEURREVEGETAL_500x500_be176f0a-e830-4f67-bbdd-fc93ad17db28.jpg",
+              "description": "<p>On dit oui &agrave; ce v&eacute;ritable actif naturel aux multiples vertus ! Gr&acirc;ce &agrave; sa teneur &eacute;lev&eacute;e en acides gras satur&eacute;s qui lui conf&egrave;re sa consistance &eacute;paisse et fondante, il <strong>nourrit<\/strong>, <strong>prot&egrave;ge intens&eacute;ment du dess&egrave;chement<\/strong> et <strong>redonne &eacute;lasticit&eacute; &agrave; la peau<\/strong>.<\/p>",
+              "product1": "creme-nourrissante-delassante-230-ml",
+              "product2": "creme-nourrissante-dynamisante-230-ml",
+              "product3": "baume-mains-ongles-nourrissant-30-ml-1"
+            }
+          },
+          "1542273578916": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Bois (pulpe)",
+              "image": "shopify:\/\/shop_images\/BOISPULPE_500x500_a0588e0e-ac0f-4c89-9e0d-5753f520c661.jpg",
+              "description": "<p>Petites, douces, biod&eacute;gradables mais redoutables avec les impuret&eacute;s. En quelques mouvements circulaires, elles&nbsp;<strong>d&eacute;sincrustent les pores<\/strong>&nbsp;et&nbsp;<strong>exfolient la peau<\/strong>&nbsp;pour un r&eacute;sultat net, m&ecirc;me de pr&egrave;s.<\/p>",
+              "product1": "masque-2-en-1-gommant-purifiant-75-ml",
+              "product2": "masque-2-en-1-gommant-purifiant-75-ml",
+              "product3": "masque-2-en-1-gommant-purifiant-75-ml"
+            }
+          },
+          "1542273455236": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Bouleau bio (sève)",
+              "image": "shopify:\/\/shop_images\/BOULEAUBIO_500x500_130eb88c-d302-4723-9364-1f904087603c.jpg",
+              "description": "<p>&Eacute;lixir de jeunesse &agrave; l&rsquo;&eacute;tat pur, elle est un nectar l&eacute;gendaire utilis&eacute; depuis des si&egrave;cles pour ses vertus&nbsp;<strong>d&eacute;toxifiantes<\/strong>. Incorpor&eacute;e dans un soin, elle exerce une incroyable action&nbsp;<strong>r&eacute;g&eacute;n&eacute;rante, anti-oxydante, hydratante et apaisante<\/strong>&nbsp;pour r&eacute;v&eacute;ler une peau plus belle, plus forte, quel que soit son &acirc;ge.<\/p>",
+              "product1": "serum-botanique-hydratant-24h-apaisant-30-ml",
+              "product2": "serum-botanique-bouclier-detox-anti-oxydant-30-ml",
+              "product3": "serum-botanique-anti-age-fermete-30-ml"
+            }
+          },
+          "1542273621671": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Chaga bio",
+              "image": "shopify:\/\/shop_images\/CHAGABIO_500x500_f3a58eee-339e-4cd0-a45d-e1a474b18412.jpg",
+              "description": "<p>Surnomm&eacute; comme le<strong>&nbsp;&laquo;&nbsp;champignon de l&rsquo;immortalit&eacute;&nbsp;&raquo;<\/strong>, ce&nbsp;<strong>tr&eacute;sor anti-&acirc;ge naturel<\/strong>&nbsp;ne se d&eacute;veloppe nulle part ailleurs que sur l&rsquo;&eacute;corce de Bouleau. Incorpor&eacute; &agrave; des soins cosm&eacute;tiques, ce champignon presque magique est un condens&eacute; d&rsquo;<strong>anti-oxydants<\/strong>&nbsp;(il en contient 25%) et poss&egrave;de la facult&eacute; de&nbsp;<strong>stimuler les d&eacute;fenses immunitaires de la peau.<\/strong><\/p>",
+              "product1": "serum-botanique-booster-eclat-anti-taches-30-ml",
+              "product2": "serum-botanique-nuit-micro-peel-peau-neuve-30-ml",
+              "product3": "serum-botanique-purifiant-anti-imperfections-30-ml"
+            }
+          },
+          "1542274338283": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Ferment & Probiotique",
+              "image": "shopify:\/\/shop_images\/FERMENT_500x500_167354b6-60de-493d-86a1-8a7a5a9bc757.jpg",
+              "description": "<p>Reconnus pour&nbsp;<strong>d&eacute;cupler l&rsquo;efficacit&eacute; des soins<\/strong>, ces micro-organismes actifs issus de la biotechnologie agissent en parfaite harmonie avec l&rsquo;&eacute;cosyst&egrave;me cutan&eacute; pour&nbsp;<strong>exfolier, retexturiser la peau, &eacute;liminer les cellules mortes<\/strong>&nbsp;et&nbsp;<strong>favoriser le renouvellement cellulaire.<\/strong>&nbsp;R&eacute;sultat bluffant assur&eacute; !<\/p>",
+              "product1": "essence-f90-activatrice-declat-150-ml",
+              "product2": "serum-botanique-purifiant-anti-imperfections-30-ml",
+              "product3": "mousse-peau-zero-defaut-100-ml"
+            }
+          },
+          "1542273665006": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Flavonoïde (ou Polyphénols)",
+              "image": "shopify:\/\/shop_images\/FLAVONOIDE_500x500_594f450a-b947-4676-8727-00812f949efc.jpg",
+              "description": "<p>Pr&eacute;sente dans de nombreuses plantes, cette substance est un &laquo;&nbsp;anti-tic-tac, le temps qui passe&nbsp;&raquo; en&nbsp;<strong>luttant contre la d&eacute;gradation de l&rsquo;acide hyaluronique<\/strong>&nbsp;naturellement pr&eacute;sent dans la peau.&nbsp;<strong>Puissant anti-oxydant<\/strong>, il est plus qu&rsquo;id&eacute;al pour<strong>&nbsp;combattre les signes du temps.<\/strong><\/p>",
+              "product1": "serum-botanique-anti-age-fermete-30-ml",
+              "product2": "creme-lift-multi-correctrice-40-ml",
+              "product3": "creme-nuit-redensifiante-50-ml"
+            }
+          },
+          "1562682786368": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Frêne",
+              "image": "shopify:\/\/shop_images\/FRESNE_500x500_179cc439-0358-4466-afd9-f60a9b8e2741.jpg",
+              "description": "<p>L&rsquo;&eacute;corce du fr&ecirc;ne, cet arbre majestueux de 40 m&egrave;tres de haut, renferme <strong>2 mol&eacute;cules actives<\/strong>, <strong>l&rsquo;esculine <\/strong>et<strong> la fraxine <\/strong>aux propri&eacute;t&eacute;s reconnues <strong>vasoconstrictrice<\/strong> et <strong>veinotonique<\/strong>. En plus d&rsquo;une action <strong>antioxydante<\/strong>, elles luttent contre la <strong>coloration des cernes<\/strong>. Alors attention les yeux&nbsp;!<\/p>",
+              "product1": "contour-yeux-et-levres-liftant-15-ml",
+              "product2": "contour-yeux-et-levres-liftant-15-ml",
+              "product3": "contour-yeux-et-levres-liftant-15-ml"
+            }
+          },
+          "1541689165544": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Glycérine",
+              "image": "shopify:\/\/shop_images\/GLYCERINE_500x500_41088788-3c34-4ef4-a287-b8c68bbb1c11.jpg",
+              "description": "<p>Pr&eacute;sente dans beaucoup de soins, elle fait l&rsquo;unanimit&eacute;&nbsp;<strong>en apportant confort<\/strong>&nbsp;aux peaux les plus assoiff&eacute;es.&nbsp;<strong>Hautement hydratante<\/strong>, elle est un v&eacute;ritable&nbsp;<strong>agent &laquo;&nbsp;anti-soif&nbsp;&raquo;<\/strong>&nbsp;&agrave; part enti&egrave;re.<\/p>",
+              "product1": "lotion-soin-perfectrice-hydratante-250-ml",
+              "product2": "gel-douche-delassant-200-ml",
+              "product3": "gel-douche-dynamisant-200-ml"
+            }
+          },
+          "1542273721087": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Honokiol",
+              "image": "shopify:\/\/shop_images\/HONOKIOL_500x500_6c976f9a-849f-4dc6-9ba3-949bb7bddc7e.jpg",
+              "description": "<p>Derri&egrave;re ses jolies fleurs, juste sous son &eacute;corce, le Magnolia cache bien son jeu en renfermant cette fabuleuse mol&eacute;cule aux propri&eacute;t&eacute;s&nbsp;<strong>apaisantes et anti-oxydantes<\/strong>. En guerre contre les radicaux libres, elle&nbsp;<strong>pr&eacute;serve la jeunesse de la peau<\/strong>&nbsp;pour que celle-ci ne se fane jamais !<\/p>",
+              "product1": "serum-botanique-hydratant-24h-apaisant-30-ml",
+              "product2": "creme-desalterante-apaisante-40-ml",
+              "product3": "creme-riche-desalterante-50-ml"
+            }
+          },
+          "1542274224367": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Kaolin",
+              "image": "shopify:\/\/shop_images\/KAOLIN_500x500_ef732349-c384-47e2-869f-e6c52771eac4.jpg",
+              "description": "<p>Une argile super agile pour&nbsp;<strong>r&eacute;guler l&rsquo;exc&egrave;s de s&eacute;bum<\/strong>&nbsp;tout en&nbsp;<strong>clarifiant&nbsp;<\/strong>la peau. Elle fait le bonheur des&nbsp;<strong>peaux mixtes &agrave; grasses<\/strong>, mais convient &eacute;galement &agrave;<strong>&nbsp;tous les types de peaux<\/strong>&nbsp;en assurant un&nbsp;<strong>effet mat<\/strong>, en toutes circonstances.<\/p>",
+              "product1": "masque-2-en-1-gommant-purifiant-75-ml",
+              "product2": "masque-infusion-re-hydratant-apaisant-75-ml",
+              "product3": "masque-2-en-1-gommant-purifiant-75-ml"
+            }
+          },
+          "1542274009078": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Levure",
+              "image": "shopify:\/\/shop_images\/LEVURE_500x500_89c44a1b-02f4-43fb-82ea-f5d4045a7fce.jpg",
+              "description": "<p>Plus connues en p&acirc;tisserie pour faire lever la p&acirc;te, les levures sont aussi les amies de la beaut&eacute; et travaillent sans rel&acirc;che pour&nbsp;<strong>booster le renouvellement cellulaire, restaurer et renforcer le m&eacute;tabolisme de la peau.<\/strong><\/p>",
+              "product1": "serum-botanique-nuit-micro-peel-peau-neuve-30-ml",
+              "product2": "creme-lissante-infusion-d-eclat-40-ml",
+              "product3": "creme-nuit-peau-parfaite-50-ml"
+            }
+          },
+          "1541689195145": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Magnoliol",
+              "image": "shopify:\/\/shop_images\/MAGNOLIOL_500x500_f03d6716-2fce-4c0a-adf4-cf9a48d552b2.jpg",
+              "description": "<p><span style=\"text-decoration: none;\">Derri&egrave;re ses jolies fleurs, juste sous son &eacute;corce, le Magnolia cache bien son jeu en renfermant cette fabuleuse mol&eacute;cule aux propri&eacute;t&eacute;s&nbsp;<\/span><strong>apaisantes et anti-oxydantes<\/strong><span style=\"text-decoration: none;\">. En guerre contre les radicaux libres, elle&nbsp;<\/span><strong>pr&eacute;serve la jeunesse de la peau<\/strong><span style=\"text-decoration: none;\">&nbsp;pour que celle-ci ne se fane jamais !<\/span><\/p>",
+              "product1": "serum-botanique-hydratant-24h-apaisant-30-ml",
+              "product2": "creme-desalterante-apaisante-40-ml",
+              "product3": "creme-riche-desalterante-50-ml"
+            }
+          },
+          "1542273764498": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Mandarine",
+              "image": "shopify:\/\/shop_images\/MANDARINE_500x500_6ce7c2e1-4396-4b1d-a9a8-012ff807b110.jpg",
+              "description": "<p>C&rsquo;est plus pr&eacute;cis&eacute;ment la Nobil&eacute;tine de Mandarine, cette mol&eacute;cule&nbsp;<strong>r&eacute;gulant l&rsquo;exc&egrave;s de s&eacute;bum<\/strong>, qui est mis &agrave; l&rsquo;honneur pour le plus grand plaisir des&nbsp;<strong>peaux &agrave; imperfections<\/strong>. Une peau&nbsp;<strong>net, mat et purifi&eacute;e<\/strong>, telles sont les promesses de cet agrume p&eacute;tillant.<\/p>",
+              "product1": "serum-botanique-purifiant-anti-imperfections-30-ml",
+              "product2": "fluide-botanique-purifiant-40-ml",
+              "product3": "correcteur-intensif-anti-imperfections-15-ml"
+            }
+          },
+          "1542273837112": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Mauve bio",
+              "image": "shopify:\/\/shop_images\/MAUVE_500x500_1c7dec2f-d965-414d-b211-7bae3419f976.jpg",
+              "description": "<p>Cette jolie petite fleur aux 5 p&eacute;tales en c&oelig;ur poss&egrave;de justement<br>5 formidables propri&eacute;t&eacute;s : elle est&nbsp;<strong>hydratante, apaisante, &eacute;molliente, rafra&icirc;chissante<\/strong>&nbsp;et m&ecirc;me&nbsp;<strong>anti-oxydante<\/strong>. Riche en&nbsp;<strong>mucilages<\/strong>, substances qui permettent &agrave; la plante de stocker l&rsquo;eau, la Mauve est l&rsquo;alli&eacute;e parfaite pour une<strong>&nbsp;peau profond&eacute;ment hydrat&eacute;e et gorg&eacute;e de vie.&nbsp;<\/strong>Tous les soins de la gamme Hydra Malva sont riches en extrait de Mauve&nbsp;titr&eacute;e.<\/p>",
+              "product1": "serum-botanique-hydratant-24h-apaisant-30-ml",
+              "product2": "creme-desalterante-apaisante-40-ml",
+              "product3": "creme-riche-desalterante-50-ml"
+            }
+          },
+          "1542273881425": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Noisette",
+              "image": "shopify:\/\/shop_images\/NOISETTE_500x500_c358454b-fd24-424e-a4c6-6af94805a4d5.jpg",
+              "description": "<p>Stop le grignotage aux abords des chemins de campagne ! Ici, on parle de l&rsquo;huile de Noisette utilis&eacute;e en cosm&eacute;tique pour ses propri&eacute;t&eacute;s&nbsp;<strong>adoucissantes, nourrissantes et r&eacute;g&eacute;n&eacute;rantes.<\/strong>&nbsp;Un d&eacute;lice &eacute;galement pour la peau !<\/p>",
+              "product1": "creme-desalterante-apaisante-40-ml",
+              "product2": "creme-lift-multi-correctrice-40-ml",
+              "product3": "contour-yeux-et-levres-liftant-15-ml"
+            }
+          },
+          "1542273967956": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Olive",
+              "image": "shopify:\/\/shop_images\/OLIVIER_500x500_b6e8bfcd-bcd7-4c87-80a9-8d857477ec58.jpg",
+              "description": "<p>Ce petit fruit m&eacute;diterran&eacute;en ne cessera de nous surprendre ! Sous forme d&rsquo;huile et associ&eacute; &agrave; des soins cosm&eacute;tiques, il r&eacute;v&egrave;le d&rsquo;incroyables vertus&nbsp;<strong>adoucissantes<\/strong>&nbsp;et&nbsp;<strong>nourrissantes<\/strong>&nbsp;pour une peau&nbsp;<strong>soyeuse, toute douce et prot&eacute;g&eacute;e du dess&egrave;chement<\/strong>.<\/p>",
+              "product1": "creme-lift-multi-correctrice-40-ml",
+              "product2": "lait-hydratant-24h-delassant-250-ml",
+              "product3": "lait-hydratant-24h-dynamisant-250-ml"
+            }
+          },
+          "1542274081947": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Orange sanguine",
+              "image": "shopify:\/\/shop_images\/ORANGESANGUINE_500x500_df4467cc-f50f-483d-a1b4-e9d375b86a4d.jpg",
+              "description": "<p>Reconnue pour ses propri&eacute;t&eacute;s&nbsp;<strong>tonifiantes<\/strong>, la cousine de l&rsquo;Orange n&rsquo;a pas &agrave; rougir car ses effluves transforment l&rsquo;application des soins en un vrai&nbsp;<strong>moment de bien-&ecirc;tre<\/strong>&nbsp;et apportent un&nbsp;<strong>voile de fra&icirc;cheur dynamisante<\/strong>&nbsp;&agrave; la peau. Un vrai coup fouet &eacute;nergisant !<\/p>",
+              "product1": "lait-hydratant-24h-dynamisant-250-ml",
+              "product2": "creme-nourrissante-dynamisante-230-ml",
+              "product3": "gel-douche-dynamisant-200-ml"
+            }
+          },
+          "1542274132763": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Oxyresveratrol",
+              "image": "shopify:\/\/shop_images\/OXYRESVERATROL_500x500_cf6a51f4-a611-4349-8bec-dd994506a44b.jpg",
+              "description": "<p>Issu du Murier blanc, cette mol&eacute;cule surpuissante a &eacute;t&eacute; encapsul&eacute;e pour &ecirc;tre d&eacute;livr&eacute;e au c&oelig;ur des cellules cutan&eacute;es et ainsi lib&eacute;rer son haut<strong>&nbsp;pouvoir d&eacute;pigmentant<\/strong>.&nbsp;<strong>50x plus efficace que le resv&eacute;ratrol, il r&eacute;duit activement la taille<\/strong>&nbsp;ainsi que&nbsp;<strong>l&rsquo;intensit&eacute; des taches.<\/strong><\/p>",
+              "product1": "serum-botanique-booster-eclat-anti-taches-30-ml",
+              "product2": "serum-botanique-booster-eclat-anti-taches-30-ml",
+              "product3": "serum-botanique-booster-eclat-anti-taches-30-ml"
+            }
+          },
+          "1542274169700": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Pamplemousse rose",
+              "image": "shopify:\/\/shop_images\/PAMPLEMOUSSEROSE_500x500_bb32bf9f-1043-4e17-b7f3-63d58dc3e2da.jpg",
+              "description": "<p>On le reconna&icirc;t ais&eacute;ment &agrave; son zeste p&eacute;tillant et frais qui &eacute;gaye autant les papilles que les&nbsp;<strong>peaux mixtes &agrave; grasses<\/strong>. Hautement concentr&eacute; en&nbsp;<strong>AHA (acide citrique)<\/strong>&nbsp;et riche en&nbsp;<strong>bioflavono&iuml;des<\/strong>&nbsp;et&nbsp;<strong>compos&eacute;s polyph&eacute;nol&eacute;s<\/strong>, il&nbsp;<strong>limite de fa&ccedil;on radicale la prolif&eacute;ration bact&eacute;rienne<\/strong>&nbsp;et laisse la peau&nbsp;<strong>purifi&eacute;e, nette et r&eacute;&eacute;quilibr&eacute;e.&nbsp;<\/strong>Tous les soins de la gamme Pur Paradisi sont riches en extrait de Pamplemousse rose&nbsp;titr&eacute;.<\/p>",
+              "product1": "serum-botanique-purifiant-anti-imperfections-30-ml",
+              "product2": "fluide-botanique-purifiant-40-ml",
+              "product3": "correcteur-intensif-anti-imperfections-15-ml"
+            }
+          },
+          "1542274377093": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Petit Houx",
+              "image": "shopify:\/\/shop_images\/PETITHOUX_500x500_fab70e10-2994-477f-a1ba-a6ab3bfc5afa.jpg",
+              "description": "<p>Petit par la taille, mais grandiose par ses r&eacute;sultats sur les&nbsp;<strong>poches et les cernes<\/strong>&nbsp;<strong>! En stimulant la micro-circulation<\/strong>&nbsp;autour des yeux, il permet de&nbsp;<strong>d&eacute;congestionner<\/strong>&nbsp;et de&nbsp;<strong>d&eacute;fatiguer le regard<\/strong>. Un actif qui a de quoi vous faire de l&rsquo;&oelig;il&hellip;<\/p>",
+              "product1": "creme-yeux-lissante-15-ml",
+              "product2": "creme-yeux-lissante-15-ml",
+              "product3": "creme-yeux-lissante-15-ml"
+            }
+          },
+          "1542274296827": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Pin",
+              "image": "shopify:\/\/shop_images\/PIN_500x500_b37df20f-0306-4830-9f2d-e127cf3fae82.jpg",
+              "description": "<p>C&rsquo;est sous sa solide &eacute;corce que le Pin rec&egrave;le un pr&eacute;cieux tr&eacute;sor :&nbsp;les&nbsp;<strong>polyph&eacute;nols ! Puissants anti-oxydants<\/strong>&nbsp;au pouvoir<strong>&nbsp;anti-&acirc;ge<\/strong>,&nbsp;<strong>ils combattent les signes du temp<\/strong>s<strong>&nbsp;en luttant<\/strong>&nbsp;contre les terribles&nbsp;<strong>radicaux libres responsables de 2 rides sur 3.&nbsp;<\/strong>Tous les soins de la gamme Lift Pinaster sont riches en extrait de Pin&nbsp;titr&eacute;.<\/p>",
+              "product1": "serum-botanique-anti-age-fermete-30-ml",
+              "product2": "creme-lift-multi-correctrice-40-ml",
+              "product3": "creme-nuit-redensifiante-50-ml"
+            }
+          },
+          "1542274258966": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Pissenlit",
+              "image": "shopify:\/\/shop_images\/PISSENLIT_500x500_0e170383-1c1a-4e47-8bac-76a59e7e9b77.jpg",
+              "description": "<p>Loin l&rsquo;id&eacute;e d&rsquo;&ecirc;tre mang&eacute; par la racine, le Pissenlit est ici exploit&eacute; en raison de sa haute concentration en&nbsp;<strong>fructanes<\/strong>&nbsp;&agrave; l&rsquo;incroyable effet&nbsp;<strong>d&eacute;tox et d&eacute;polluant<\/strong>. Les m&eacute;faits des agressions ext&eacute;rieures telles que rayons UV, pollution, tabac partent en fum&eacute;e pour&nbsp;<strong>prot&eacute;ger la jeunesse de la peau<\/strong>&nbsp;et r&eacute;v&eacute;ler un&nbsp;<strong>teint parfaitement d&eacute;gris&eacute; et d&eacute;fatigu&eacute;.<\/strong><br>Tous les soins de la gamme Detox Officinale sont riches en extrait de Pissenlit&nbsp;<a href=\"http:\/\/saeve.com\/brevet\/les-secrets-de-fab\/\">titr&eacute;<\/a>.<\/p>",
+              "product1": "serum-botanique-bouclier-detox-anti-oxydant-30-ml",
+              "product2": "creme-detox-multi-defense-spf30-40ml",
+              "product3": "creme-nuit-detox-regenerante-50-ml"
+            }
+          },
+          "1542274470871": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Pois",
+              "image": "shopify:\/\/shop_images\/POIS_500x500_39e161b3-6040-46de-926c-74d20dd7a7e3.jpg",
+              "description": "<p>Petit, rond, vert tendre, cru ou cuit, il est aussi doux que d&eacute;licieux. Ce que l&rsquo;on sait moins, c&rsquo;est qu&rsquo;il est aussi un merveilleux ingr&eacute;dient cosm&eacute;tique&hellip; Avec sa composition riche en&nbsp;<strong>monosaccharides<\/strong>, il&nbsp;<strong>agit sur les taches<\/strong>&nbsp;et tout autre&nbsp;<strong>d&eacute;faut cutan&eacute;<\/strong>&nbsp;pour donner un&nbsp;<strong>teint &eacute;clatant.&nbsp;<\/strong>Tous les soins de la gamme Perfect Pisum sont riches en extrait de Pois&nbsp;titr&eacute;<\/p>",
+              "product1": "serum-botanique-booster-eclat-anti-taches-30-ml",
+              "product2": "serum-botanique-nuit-micro-peel-peau-neuve-30-ml",
+              "product3": "creme-lissante-infusion-d-eclat-40-ml"
+            }
+          },
+          "1542274505328": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Pomme (phlorétine)",
+              "image": "shopify:\/\/shop_images\/POMME_500x500_857f7ab5-90d9-4931-99c5-a7aa0cc77d22.jpg",
+              "description": "<p>Ici, on croque la pomme comme on croque la vie : &agrave; pleine dent ! Justement, pour redonner vie &agrave; la peau, ce fruit est le partenaire id&eacute;al gr&acirc;ce &agrave; la&nbsp;<strong>phlor&eacute;tine<\/strong>, cette mol&eacute;cule hautement&nbsp;<strong>anti-oxydante<\/strong>&nbsp;qui&nbsp;<strong>d&eacute;joue les effets n&eacute;fastes des radicaux libres. La jeunesse de la peau est pr&eacute;serv&eacute;e<\/strong>, elle est tout simplement &agrave; croquer !<\/p>",
+              "product1": "serum-botanique-bouclier-detox-anti-oxydant-30-ml",
+              "product2": "creme-detox-multi-defense-spf30-40ml",
+              "product3": "creme-nuit-detox-regenerante-50-ml"
+            }
+          },
+          "1542274626614": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Rhubarbe",
+              "image": "shopify:\/\/shop_images\/RHUBARBE_500x500_b866ea69-355c-4eba-99e4-08020082777a.jpg",
+              "description": "<p>En compote ou en tarte, c&rsquo;est un r&eacute;gal&hellip; Alors incorpor&eacute;e dans un soin, c&rsquo;est juste un d&eacute;lice pour la peau. Gr&acirc;ce &agrave; sa forte concentration en sucres, elle&nbsp;<strong>limite la perte d&rsquo;eau<\/strong>&nbsp;pour&nbsp;<strong>maintenir un taux d&rsquo;hydratation optimal<\/strong>&nbsp;et assurer un peau&nbsp;<strong>divinement douce au toucher.<\/strong><\/p>",
+              "product1": "lait-hydratant-24h-delassant-250-ml",
+              "product2": "creme-nourrissante-delassante-230-ml",
+              "product3": "gel-douche-delassant-200-ml"
+            }
+          },
+          "1542274585571": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Salicyline",
+              "image": "shopify:\/\/shop_images\/SALICYLINE_500x500_0bfca82a-71bd-4b2f-80d4-789ecb8cb0ca.jpg",
+              "description": "<p>Issue de l&rsquo;&eacute;corce de Saule blanc, cette mol&eacute;cule est une cousine tr&egrave;s proche de l&rsquo;aspirine. De ce fait, elle poss&egrave;de de formidables propri&eacute;t&eacute;s<strong>&nbsp;anti-inflammatoires et r&eacute;g&eacute;n&eacute;rantes,<\/strong>&nbsp;de quoi&nbsp;<strong>apaiser les peaux sensibles<\/strong>&nbsp;en manque de confort.<\/p>",
+              "product1": "serum-botanique-hydratant-24h-apaisant-30-ml",
+              "product2": "creme-desalterante-apaisante-40-ml",
+              "product3": "creme-riche-desalterante-50-ml"
+            }
+          },
+          "1542273528623": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Tripeptides",
+              "image": "shopify:\/\/shop_images\/TRIPEPTIDES_500x500_d6edef3d-3056-4d57-815c-63a5718a68ab.jpg",
+              "description": "<p>Un complexe form&eacute; de&nbsp;<strong>3 peptides<\/strong>, donc 3 fois plus puissants, &agrave; l&rsquo;action&nbsp;<strong>raffermissante<\/strong>&nbsp;et&nbsp;<strong>redensifiante<\/strong>. Ils&nbsp;<strong>stimulent la production naturelle de collag&egrave;ne et d&rsquo;&eacute;lastine<\/strong>&nbsp;de la peau. Cela ne s&rsquo;invente pas, l&rsquo;union fait bien la force !<\/p>",
+              "product1": "serum-botanique-anti-age-fermete-30-ml",
+              "product2": "creme-lift-multi-correctrice-40-ml",
+              "product3": "creme-nuit-redensifiante-50-ml"
+            }
+          },
+          "1542274673417": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Vitamine C",
+              "image": "shopify:\/\/shop_images\/VITAMINEC_500x500_53e374c9-71e7-4ab0-a3e7-955507cd1d0b.jpg",
+              "description": "<p>C&rsquo;est bien connu, les fruits (orange, pamplemousse, citron&hellip;) et les l&eacute;gumes en regorgent ! Elle&nbsp;<strong>stimule la production naturelle de collag&egrave;ne<\/strong>&nbsp;mais c&rsquo;est aussi une puissante&nbsp;<strong>mol&eacute;cule anti-oxydante<\/strong>qui permet de&nbsp;<strong>pr&eacute;venir des signes de l&rsquo;&acirc;ge<\/strong>&nbsp;et de&nbsp;<strong>booster l&rsquo;&eacute;clat du teint.<\/strong><\/p>",
+              "product1": "serum-botanique-nuit-micro-peel-peau-neuve-30-ml",
+              "product2": "lait-hydratant-24h-dynamisant-250-ml",
+              "product3": "serum-botanique-nuit-micro-peel-peau-neuve-30-ml"
+            }
+          },
+          "1547743087867": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Vitamine PP<br>(ou B3 ou Niacinamide)",
+              "image": "shopify:\/\/shop_images\/VITAMINEPP_500x500_ed61b606-7df4-46cb-a36a-e5045d3aea00.jpg",
+              "description": "<p>Une vitamine qui redonne du peps &agrave; la peau ! Aussi appel&eacute; Niacinamide, elle apporte une&nbsp;<strong>hydratation optimale &agrave; la peau<\/strong>&nbsp;et l&rsquo;<strong>apaise durablement<\/strong>&nbsp;pour une&nbsp;<strong>douceur infinie<\/strong>&nbsp;et un&nbsp;<strong>confort quasi-instantan&eacute;.<\/strong><\/p>",
+              "product1": "contour-yeux-et-levres-liftant-15-ml",
+              "product2": "correcteur-intensif-anti-imperfections-15-ml",
+              "product3": "lait-hydratant-24h-delassant-250-ml"
+            }
+          },
+          "1547743080269": {
+            "type": "ingredients",
+            "settings": {
+              "name": "Zinc (sel)",
+              "image": "shopify:\/\/shop_images\/ZINC_500x500_12a6582b-9cf7-459d-9396-c0dd110b9f92.jpg",
+              "description": "<p>Le sel de Zinc vient mettre son grain de sel dans l&rsquo;&eacute;ternelle guerre des boutons ! Utilis&eacute; pour ses remarquables vertus&nbsp;<strong>purifiantes<\/strong>&nbsp;et&nbsp;<strong>s&eacute;bo-r&eacute;gulatrices<\/strong>, il&nbsp;<strong>r&eacute;duit les imperfections<\/strong>&nbsp;pour une&nbsp;<strong>peau sans aucun d&eacute;faut.<\/strong><\/p>",
+              "product1": "eau-micellaire-purifiante-500-ml",
+              "product2": "gel-nettoyant-purifiant-150-ml",
+              "product3": "fluide-botanique-purifiant-40-ml"
+            }
+          }
+        },
+        "block_order": [
+          "1541689061593",
+          "1541689097158",
+          "1541698456493",
+          "1541689139579",
+          "1562682546297",
+          "1542274427536",
+          "1542273578916",
+          "1542273455236",
+          "1542273621671",
+          "1542274338283",
+          "1542273665006",
+          "1562682786368",
+          "1541689165544",
+          "1542273721087",
+          "1542274224367",
+          "1542274009078",
+          "1541689195145",
+          "1542273764498",
+          "1542273837112",
+          "1542273881425",
+          "1542273967956",
+          "1542274081947",
+          "1542274132763",
+          "1542274169700",
+          "1542274377093",
+          "1542274296827",
+          "1542274258966",
+          "1542274470871",
+          "1542274505328",
+          "1542274626614",
+          "1542274585571",
+          "1542273528623",
+          "1542274673417",
+          "1547743087867",
+          "1547743080269"
+        ],
+        "settings": {
+          "title_btn": "Vous aimerez...",
+          "title_popup": "Vous aimerez..."
+        }
+      },
+      "1542056157977": {
+        "type": "tryptique-visuel-texte",
+        "blocks": {
+          "1542056162192": {
+            "type": "text_and_pict",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/front-immunox-patent_1024x_490f180f-182b-478c-bd37-0b77bb56a217.jpg",
+              "title": "Performance",
+              "text": "<p>Un concentré d’actifs brevetés qui réveillent les mécanismes de jeunesse de la peau.<\/p>",
+              "link": "shopify:\/\/pages\/le-brevet-immunox"
+            }
+          },
+          "1542056328382": {
+            "type": "text_and_pict",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/the_serums_1024x_217ba4a2-0eff-46cc-bdaa-0006a545fb4a.jpg",
+              "title": "In naturae veritas ",
+              "text": "<p>Une très haute concentration d’ingrédients naturels titrés, de la plus haute qualité, que l&#x27;on retrouve dans la nature française, sans silicone, parabens, PEG… pour livrer leur vraie nature.<\/p>",
+              "link": "shopify:\/\/collections\/le-meilleur-de-saeve"
+            }
+          },
+          "1542056419041": {
+            "type": "text_and_pict",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/eyes_1024x_1024x_387ded83-6746-470d-a787-6513d34c217c.gif",
+              "title": "Légèreté d'esprit",
+              "text": "<p>Une marque positive au ton gai et décalé pour des soins sérieux… qui ne se prennent pas au sérieux !<\/p>",
+              "link": "shopify:\/\/pages\/il-etait-une-fois"
+            }
+          },
+          "1598974939732": {
+            "type": "text_and_pict",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/stamp_saeve_madeinfrance.png",
+              "title": "Fabriqué en France",
+              "text": "<p>Tous nos soins sont concoctés et fabriqués en France avec amour dans le plus grand respect de l’environnement et de votre peau.<\/p>",
+              "link": "\/"
+            }
+          }
+        },
+        "block_order": [
+          "1542056162192",
+          "1542056328382",
+          "1542056419041",
+          "1598974939732"
+        ],
+        "settings": {
+          "title": "en quelques mots",
+          "display_image_made_france": false
+        }
+      },
+      "1542282432014": {
+        "type": "engagements",
+        "blocks": {
+          "1542282447765": {
+            "type": "bandeau_engagements1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/truck_100x_1a1188f6-6583-4d1b-91dd-ca86b52bd787.png",
+              "title": "LIVRAISON OFFERTE",
+              "subtitle": "<p>Dès 35€ d&#x27;achats<\/p>"
+            }
+          },
+          "1542282657936": {
+            "type": "bandeau_engagements1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/bottles_100x_9fa15b1b-ffda-4724-8217-0d6efab0fcdb.png",
+              "title": "DOSES D'ESSAI OFFERTES",
+              "subtitle": "<p>Pour toute commande<\/p>"
+            }
+          },
+          "1542282693361": {
+            "type": "bandeau_engagements1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/card_100x_2c53c857-857b-4392-87c9-8a239da6b6ad.png",
+              "title": "PAIEMENT SÉCURISÉ",
+              "subtitle": "<p>Avec Visa, Mastercard, American Express<\/p>"
+            }
+          },
+          "1544111825228": {
+            "type": "bandeau_engagements1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/letter_100x_f4ac3f04-cfd1-46e2-aab0-2869346cffc2.png",
+              "title": "HELLO SAEVE",
+              "subtitle": "<p>Contactez-nous : avotreservice@saeve.com<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1542282447765",
+          "1542282657936",
+          "1542282693361",
+          "1544111825228"
+        ],
+        "settings": {
+          "speed": "500"
+        }
+      },
+      "new-footer": {
+        "type": "new-footer",
+        "blocks": {
+          "new-footer-0": {
+            "type": "text",
+            "settings": {
+              "title": "Saeve",
+              "content": "<p>Saeve, première marque de cosmétiques transmettant à la peau, les pouvoirs uniques brevetés (Brevet Immunox ®) de la Sève fraîche de Bouleau bio ainsi que du miraculeux Chaga bio, «champignon de l’immortalité» et d’autres ingrédients naturels surprenants, 100% bluffants… MADE IN FRANCE<\/p><p><\/p><p><\/p>",
+              "show_social_media": true,
+              "social_title": "Saeve you soon !",
+              "menu": "footer",
+              "newsText": "Rejoignez le cercle des Belles Plantes et recevez nos Saeveletters :-)"
+            }
+          },
+          "1542382397613": {
+            "type": "menu_bottom",
+            "settings": {
+              "menu_bottom": "footer-1"
+            }
+          }
+        },
+        "block_order": [
+          "new-footer-0",
+          "1542382397613"
+        ],
+        "settings": {
+          "title": "<p>Des soins extraordinaires, à base de plantes (pas si) ordinaires !<\/p>"
+        }
+      },
+      "1543070901578": {
+        "type": "quizz",
+        "disabled": true,
+        "blocks": {
+          "1543072937120": {
+            "type": "block-a",
+            "settings": {
+              "handle": "",
+              "title": "Commençons par votre âge, vous avez :",
+              "explain": "Pas de panique, nous sommes entre nous !",
+              "choice1": "- de 30 ans",
+              "explainchoice1": "",
+              "handle1": "",
+              "choice2": "+ de 30 ans",
+              "explainchoice2": "",
+              "handle2": "",
+              "choice3": "",
+              "explainchoice3": "",
+              "handle3": "",
+              "choice4": "",
+              "explainchoice4": "",
+              "handle4": "",
+              "choice5": "",
+              "explainchoice5": "",
+              "handle5": "",
+              "choice6": "",
+              "explainchoice6": "",
+              "handle6": ""
+            }
+          },
+          "1543073390168": {
+            "type": "block-b",
+            "settings": {
+              "handle": "",
+              "title": "Votre petit nid douillet se trouve :",
+              "explain": "",
+              "choice1": "À la campagne",
+              "explainchoice1": "",
+              "handle1": "",
+              "choice2": "En ville",
+              "explainchoice2": "",
+              "handle2": "",
+              "choice3": "À la montagne",
+              "explainchoice3": "",
+              "handle3": "",
+              "choice4": "À la mer",
+              "explainchoice4": "",
+              "handle4": ""
+            }
+          },
+          "1543073631246": {
+            "type": "block-a",
+            "settings": {
+              "handle": "",
+              "title": "Votre peau et vous, c'est plutôt :",
+              "explain": "",
+              "choice1": "La grande zone d’inconfort.",
+              "explainchoice1": "Elle est rugueuse au toucher, tiraille et picote. En prime, elle réagit aux agressions extérieures (soleil, froid) et au stress.",
+              "handle1": "",
+              "choice2": "La guerre des boutons.",
+              "explainchoice2": "Elle brille de mille feux avec en option des imperfections à n’en plus pouvoir.",
+              "handle2": "",
+              "choice3": "Un retour dans le temps, c’est possible ?",
+              "explainchoice3": "Elle se relâche, se plisse, manque de tonicité et les rides sont de plus en plus visibles.",
+              "handle3": "",
+              "choice4": "Ma bête noire, c’est la pollution.",
+              "explainchoice4": "Elle est agressée, fatiguée et étouffée. Mon teint est terne, des rougeurs apparaissent et des rides s’installent.",
+              "handle4": "",
+              "choice5": "Les 101 dalmatiens !",
+              "explainchoice5": "Elle présente des taches pigmentaires, manque d’éclat et le teint est irrégulier.",
+              "handle5": "",
+              "choice6": "",
+              "explainchoice6": "",
+              "handle6": ""
+            }
+          },
+          "1543073725446": {
+            "type": "block-a",
+            "settings": {
+              "handle": "",
+              "title": "Quant à votre rituel beauté, c'est plutôt :",
+              "explain": "",
+              "choice1": "Fissa, fissa.",
+              "explainchoice1": "Je passe le moins de temps possible dans la salle de bain.",
+              "handle1": "",
+              "choice2": "Le soin avant tout !",
+              "explainchoice2": "Le maquillage, c’est secondaire.",
+              "handle2": "",
+              "choice3": "C'est une affaire sérieuse.",
+              "explainchoice3": "Très impliquée, j’aime prendre du temps pour moi.",
+              "handle3": "",
+              "choice4": "",
+              "explainchoice4": "",
+              "handle4": "",
+              "choice5": "",
+              "explainchoice5": "",
+              "handle5": "",
+              "choice6": "",
+              "explainchoice6": "",
+              "handle6": ""
+            }
+          },
+          "1543073828762": {
+            "type": "block-b",
+            "settings": {
+              "handle": "",
+              "title": "Allez, avouons-le, nous avons tous un petit vice caché !",
+              "explain": "Le votre serait surtout :",
+              "choice1": "La cigarette",
+              "explainchoice1": "Mes proches me disent que je fume trop.",
+              "handle1": "",
+              "choice2": "Le manque de sommeil",
+              "explainchoice2": "Je dors peu et souvent que d’un œil.",
+              "handle2": "",
+              "choice3": "Le stress",
+              "explainchoice3": "Je passe mes journées à courir partout.",
+              "handle3": "",
+              "choice4": "La malbouffe",
+              "explainchoice4": "J’ai l’habitude du sandwich gobé en 10s chrono.",
+              "handle4": ""
+            }
+          },
+          "1543074155416": {
+            "type": "block-a",
+            "settings": {
+              "handle": "",
+              "title": "Votre vœu ultime serait d'agir plus que tout sur :",
+              "explain": "",
+              "choice1": "La déshydratation",
+              "explainchoice1": "",
+              "handle1": "",
+              "choice2": "La sécheresse",
+              "explainchoice2": "",
+              "handle2": "",
+              "choice3": "La brillance et les imperfections",
+              "explainchoice3": "",
+              "handle3": "",
+              "choice4": "L'effet des agressions extérieures",
+              "explainchoice4": "",
+              "handle4": "",
+              "choice5": "Les taches pigmentaires et le teint terne",
+              "explainchoice5": "",
+              "handle5": "",
+              "choice6": "Les rides",
+              "explainchoice6": "",
+              "handle6": ""
+            }
+          },
+          "1543074210304": {
+            "type": "block-a",
+            "settings": {
+              "handle": "",
+              "title": "Et pour finir...",
+              "explain": "Devant votre miroir vous voyez surtout :",
+              "choice1": "Des cernes et\/ou poches",
+              "explainchoice1": "",
+              "handle1": "",
+              "choice2": "Quelques ridules et des rides de la patte d’oie",
+              "explainchoice2": "",
+              "handle2": "",
+              "choice3": "Des rides bien installées",
+              "explainchoice3": "",
+              "handle3": "",
+              "choice4": "Rien de tout cela",
+              "explainchoice4": "",
+              "handle4": "",
+              "choice5": "",
+              "explainchoice5": "",
+              "handle5": "",
+              "choice6": "",
+              "explainchoice6": "",
+              "handle6": ""
+            }
+          }
+        },
+        "block_order": [
+          "1543072937120",
+          "1543073390168",
+          "1543073631246",
+          "1543073725446",
+          "1543073828762",
+          "1543074155416",
+          "1543074210304"
+        ],
+        "settings": {
+          "title": "Mon Diag' Beauté by",
+          "debug": false,
+          "speed": 1000,
+          "hide-layout": false,
+          "padding": "25px",
+          "back-button": "Go back",
+          "show-breadcrumb": true,
+          "validate_btn": "Valider"
+        }
+      },
+      "quizz": {
+        "type": "quizz",
+        "blocks": {
+          "1543505896575": {
+            "type": "block-c",
+            "settings": {
+              "title": "Hello, je m'appelle",
+              "explain": "",
+              "select-value": "name",
+              "error": "Entrez au minimum 1 lettre",
+              "min_char": 1,
+              "max_char": 20,
+              "max_width": 340
+            }
+          },
+          "1543505992882": {
+            "type": "block-c",
+            "settings": {
+              "title": "Quel âge avez-vous ?",
+              "explain": "",
+              "select-value": "age",
+              "error": "Entrez un nombre",
+              "min_char": 1,
+              "max_char": 3,
+              "max_width": 70
+            }
+          },
+          "1543316162445": {
+            "type": "block-b",
+            "settings": {
+              "handle": "",
+              "title": "Votre petit nid douillet se trouve :",
+              "explain": "",
+              "choice1": "À la campagne",
+              "explainchoice1": "",
+              "handle1": "",
+              "image1": "shopify:\/\/shop_images\/campagne.png",
+              "choice2": "En ville",
+              "explainchoice2": "",
+              "handle2": "",
+              "image2": "shopify:\/\/shop_images\/ville.png",
+              "choice3": "À la montagne",
+              "explainchoice3": "",
+              "handle3": "",
+              "image3": "shopify:\/\/shop_images\/montagne.png",
+              "choice4": "À la mer",
+              "explainchoice4": "",
+              "handle4": "",
+              "image4": "shopify:\/\/shop_images\/mer.png"
+            }
+          },
+          "1543316517857": {
+            "type": "block-a",
+            "settings": {
+              "handle": "peau",
+              "title": "Votre peau et vous, c'est plutôt :",
+              "explain": "",
+              "choice1": "La grande zone d’inconfort.",
+              "explainchoice1": "Elle est rugueuse au toucher, tiraille et picote. En prime, elle réagit aux agressions extérieures (soleil, froid) et au stress.",
+              "handle1": "inconfort",
+              "choice2": "La guerre des boutons.",
+              "explainchoice2": "Elle brille de mille feux avec en option des imperfections à n’en plus pouvoir.",
+              "handle2": "bouton",
+              "choice3": "Un retour dans le temps, c’est possible ?",
+              "explainchoice3": "Elle se relâche, se plisse, manque de tonicité et les rides sont de plus en plus visibles.",
+              "handle3": "retour",
+              "choice4": "Ma bête noire, c’est la pollution.",
+              "explainchoice4": "Elle est agressée, fatiguée et étouffée. Mon teint est terne, des rougeurs apparaissent et des rides s’installent.",
+              "handle4": "pollution",
+              "choice5": "Les 101 dalmatiens !",
+              "explainchoice5": "Elle présente des taches pigmentaires, manque d’éclat et le teint est irrégulier.",
+              "handle5": "taches",
+              "choice6": "",
+              "explainchoice6": "",
+              "handle6": ""
+            }
+          },
+          "1543316643630": {
+            "type": "block-a",
+            "settings": {
+              "handle": "",
+              "title": "Quant à votre rituel beauté, c'est plutôt :",
+              "explain": "",
+              "choice1": "Fissa, fissa.",
+              "explainchoice1": "Je passe le moins de temps possible dans la salle de bain.",
+              "handle1": "",
+              "choice2": "Le soin avant tout !",
+              "explainchoice2": "Le maquillage, c'est secondaire.",
+              "handle2": "",
+              "choice3": "C'est une affaire sérieuse.",
+              "explainchoice3": "Très impliquée, j'aime prendre du temps pour moi.",
+              "handle3": "",
+              "choice4": "",
+              "explainchoice4": "",
+              "handle4": "",
+              "choice5": "",
+              "explainchoice5": "",
+              "handle5": "",
+              "choice6": "",
+              "explainchoice6": "",
+              "handle6": ""
+            }
+          },
+          "1543316712957": {
+            "type": "block-b",
+            "settings": {
+              "handle": "",
+              "title": "Allez, avouons-le, nous avons tous un petit vice caché !",
+              "explain": "Le votre serait surtout :",
+              "choice1": "La cigarette",
+              "explainchoice1": "Mes proches me disent que je fume trop.",
+              "handle1": "",
+              "image1": "shopify:\/\/shop_images\/cigarette.png",
+              "choice2": "Le manque de sommeil",
+              "explainchoice2": "Je dors peu et souvent que d'un œil.",
+              "handle2": "",
+              "image2": "shopify:\/\/shop_images\/sommeil.png",
+              "choice3": "Le stress",
+              "explainchoice3": "Je passe mes journées à courir partout.",
+              "handle3": "",
+              "image3": "shopify:\/\/shop_images\/stress.png",
+              "choice4": "La malbouffe.",
+              "explainchoice4": "J'ai l'habitude du sandwich gobé en 10s chrono.",
+              "handle4": "",
+              "image4": "shopify:\/\/shop_images\/alimentation.png"
+            }
+          },
+          "1543316823650": {
+            "type": "block-a",
+            "settings": {
+              "handle": "voeu",
+              "title": "Votre vœu ultime serait d'agir plus que tout sur :",
+              "explain": "",
+              "choice1": "La déshydratation",
+              "explainchoice1": "",
+              "handle1": "deshydratation",
+              "choice2": "La sécheresse",
+              "explainchoice2": "",
+              "handle2": "secheresse",
+              "choice3": "La brillance et les imperfections",
+              "explainchoice3": "",
+              "handle3": "brillance",
+              "choice4": "L'effet des agressions extérieures",
+              "explainchoice4": "",
+              "handle4": "agressions",
+              "choice5": "Les taches pigmentaires et le teint terne",
+              "explainchoice5": "",
+              "handle5": "taches",
+              "choice6": "Les rides",
+              "explainchoice6": "",
+              "handle6": "rides"
+            }
+          },
+          "1543316882385": {
+            "type": "block-a",
+            "settings": {
+              "handle": "finir",
+              "title": "Et pour finir...",
+              "explain": "Devant votre miroir vous voyez surtout :",
+              "choice1": "Des cernes et\/ou poches",
+              "explainchoice1": "",
+              "handle1": "cernes",
+              "choice2": "Quelques ridules et des rides de la patte d’oie",
+              "explainchoice2": "",
+              "handle2": "rides",
+              "choice3": "Des rides bien installées",
+              "explainchoice3": "",
+              "handle3": "rides",
+              "choice4": "Rien de tout cela",
+              "explainchoice4": "",
+              "handle4": "rien",
+              "choice5": "",
+              "explainchoice5": "",
+              "handle5": "",
+              "choice6": "",
+              "explainchoice6": "",
+              "handle6": ""
+            }
+          }
+        },
+        "block_order": [
+          "1543505896575",
+          "1543505992882",
+          "1543316162445",
+          "1543316517857",
+          "1543316643630",
+          "1543316712957",
+          "1543316823650",
+          "1543316882385"
+        ],
+        "settings": {
+          "title": "Mon Diag' Beauté by",
+          "debug": false,
+          "speed": 1000,
+          "hide-layout": false,
+          "padding": "25px",
+          "back-button": "Retour",
+          "show-breadcrumb": true,
+          "validate_btn": "Suivant"
+        }
+      },
+      "1543399754066": {
+        "type": "blog-posts",
+        "blocks": {
+          "1543399754066-0": {
+            "type": "blog",
+            "settings": {
+              "blog": "journal"
+            }
+          }
+        },
+        "block_order": [
+          "1543399754066-0"
+        ],
+        "settings": {
+          "subheading": "",
+          "title": "Le Journal",
+          "show_category": false,
+          "button_link": "shopify:\/\/blogs\/journal",
+          "button_text": "Voir tous les articles"
+        }
+      },
+      "1543424278012": {
+        "type": "home-diagno",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/lift-diag.jpg",
+          "title": "Mon Diag' Beauté",
+          "subtitle": "La Saeve qui sauve votre peau !",
+          "btn": "Je fais le test",
+          "url": "shopify:\/\/pages\/mon-diag-beaute"
+        }
+      },
+      "resultat": {
+        "type": "resultat",
+        "settings": {
+          "title_result_soin": ", nous avons déniché pour vous le rituel beauté Saeve parfait qui va vous aider à faire peau neuve au naturel !",
+          "title_result_comp": "Pour être encore plus rayonnante de beauté, complétez votre rituel beauté :",
+          "title_droit": "<p><br\/>Le petit plus !<br>(Mais pas si petit)<\/p>",
+          "text_droit": "<p>Gr&acirc;ce au complexe brevet&eacute; <b>Immunox&reg;<\/b>, les soins Saeve apporteront &eacute;galement &agrave; votre peau sa dose quotidienne d&rsquo;anti-oxydants et de boosters de d&eacute;fenses cutan&eacute;es pour un effet &laquo; bouclier &raquo; contre les agressions ext&eacute;rieures (pollution, stress, UV&hellip;). .<\/p>\n<p><strong>Vous verrez, votre peau se d&eacute;fendra mieux et sera donc plus belle !<\/strong><\/p>"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "show_rss": false,
+          "show_tags": true,
+          "show_featured_article": false,
+          "show_category": false
+        }
+      },
+      "shop-now": {
+        "type": "shop-now",
+        "settings": {
+          "show_section": false,
+          "title": "Shop now",
+          "collection": "",
+          "grid_items_count": 6,
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "show_article_image": false,
+          "show_date": false,
+          "show_category": false,
+          "show_author": false,
+          "show_share_buttons": true
+        }
+      },
+      "1544711668357": {
+        "type": "Testimonials-custom",
+        "blocks": {
+          "1544711668357-0": {
+            "type": "testimonial",
+            "settings": {
+              "bg_color": "#ffffff",
+              "border_color": "#f8aa00",
+              "title_color": "#000000",
+              "subtitle_color": "#f8aa00",
+              "title_bold": false,
+              "subtitle_bold": true,
+              "link": "shopify:\/\/collections\/detox-officinale-detox-anti-oxydant",
+              "logo": "shopify:\/\/shop_images\/detox-officinale_400x400_200x_b83c3c8e-892e-49b4-b594-4929e05ecf44.png",
+              "title": "DÉTOX ANTI-OXYDANT",
+              "subtitle": "[Detox Officinale]",
+              "logo_hover": "shopify:\/\/shop_images\/detox-officinale_400x400_hover_134x134_crop_center_2x_fa5f25ff-8825-4b9b-acb9-43e987d8d468.png",
+              "bg_hover_color": "#f8aa00",
+              "title_hover_color": "#ffffff",
+              "subtitle_hover_color": "#ffffff",
+              "border_color_hover": "#f8aa00"
+            }
+          },
+          "1544719080119": {
+            "type": "testimonial",
+            "settings": {
+              "bg_color": "#ffffff",
+              "border_color": "#8fcaaa",
+              "title_color": "#000000",
+              "subtitle_color": "#8fcaaa",
+              "title_bold": false,
+              "subtitle_bold": true,
+              "link": "shopify:\/\/collections\/perfect-pisum-eclat-anti-taches",
+              "logo": "shopify:\/\/shop_images\/perfect-pisum_400x400_200x_bc1f8029-a794-4b3d-8b59-d32cbf9c3208.png",
+              "title": "ÉCLAT ANTI-TACHES",
+              "subtitle": "[Perfect Pisum]",
+              "logo_hover": "shopify:\/\/shop_images\/perfect-pisum_400x400_hover_134x134_crop_center_2x_2a9abb45-948c-4770-92c1-178e1b35af1e.png",
+              "bg_hover_color": "#8fcaaa",
+              "title_hover_color": "#ffffff",
+              "subtitle_hover_color": "#ffffff",
+              "border_color_hover": "#8fcaaa"
+            }
+          },
+          "1544719081207": {
+            "type": "testimonial",
+            "settings": {
+              "bg_color": "#ffffff",
+              "border_color": "#983c61",
+              "title_color": "#000000",
+              "subtitle_color": "#983c61",
+              "title_bold": false,
+              "subtitle_bold": true,
+              "link": "shopify:\/\/collections\/lift-pinaster-anti-age-fermete",
+              "logo": "shopify:\/\/shop_images\/lift-pinaster_400x400_200x_ed12b68b-8e76-496a-957e-12c1ea3dabfd.png",
+              "title": "ANTI- ÂGE FERMETÉ",
+              "subtitle": "[Lift Pinaster]",
+              "logo_hover": "shopify:\/\/shop_images\/lift-pinaster_400x400_hover_134x134_crop_center_2x_a17a5632-ee12-447d-b9a7-266a980365bf.png",
+              "bg_hover_color": "#983c61",
+              "title_hover_color": "#ffffff",
+              "subtitle_hover_color": "#ffffff",
+              "border_color_hover": "#983c61"
+            }
+          },
+          "1544719082361": {
+            "type": "testimonial",
+            "settings": {
+              "bg_color": "#ffffff",
+              "border_color": "#5886d9",
+              "title_color": "#000000",
+              "subtitle_color": "#5886d9",
+              "title_bold": false,
+              "subtitle_bold": true,
+              "link": "shopify:\/\/collections\/hydra-malva-hydratant-apaisant",
+              "logo": "shopify:\/\/shop_images\/hydra-malva_400x400_200x_68eb813f-becf-4fec-90de-345c1baef60e.png",
+              "title": "HYDRATANT APAISANT",
+              "subtitle": "[Hydra Malva]",
+              "logo_hover": "shopify:\/\/shop_images\/hydra-malva_400x400_hover_134x134_crop_center_2x_3ac6870c-9246-4541-ab4c-677afa2e15a4.png",
+              "bg_hover_color": "#5886d9",
+              "title_hover_color": "#ffffff",
+              "subtitle_hover_color": "#ffffff",
+              "border_color_hover": "#5886d9"
+            }
+          },
+          "1544810348479": {
+            "type": "testimonial",
+            "settings": {
+              "bg_color": "#ffffff",
+              "border_color": "#eb5374",
+              "title_color": "#000000",
+              "subtitle_color": "#eb5374",
+              "title_bold": false,
+              "subtitle_bold": true,
+              "link": "https:\/\/saeve.com\/collections\/pur-paradisi-anti-imperfections",
+              "logo": "shopify:\/\/shop_images\/pur-paradisi_400x400_200x_678399c4-8568-4407-b8ca-d06bdfca6a98.png",
+              "title": "PURIFIANT ANTI-IMPERFECTIONS",
+              "subtitle": "[Pur Paradisi]",
+              "logo_hover": "shopify:\/\/shop_images\/pur-paradisi_400x400_hover_134x134_crop_center_2x_2394b59f-6e0b-4f2e-9f03-426536fee0fa.png",
+              "bg_hover_color": "#eb5374",
+              "title_hover_color": "#ffffff",
+              "subtitle_hover_color": "#ffffff",
+              "border_color_hover": "#eb5374"
+            }
+          },
+          "1544810473982": {
+            "type": "testimonial",
+            "settings": {
+              "bg_color": "#ffffff",
+              "border_color": "#009a98",
+              "title_color": "#000000",
+              "subtitle_color": "#009a98",
+              "title_bold": false,
+              "subtitle_bold": true,
+              "link": "shopify:\/\/collections\/relax-rheum-corps",
+              "logo": "shopify:\/\/shop_images\/realx-rheum_400x400_200x_b0e7a032-4060-402a-a6b1-573eca51c369.png",
+              "title": "DÉLASSANT (CORPS)",
+              "subtitle": "[Relax Rheum]",
+              "logo_hover": "shopify:\/\/shop_images\/relax-rheum_400x400_hover_134x134_crop_center_2x_882a9d7b-31c0-40c0-8d5b-13dfad0ebf20.png",
+              "bg_hover_color": "#009a98",
+              "title_hover_color": "#ffffff",
+              "subtitle_hover_color": "#ffffff",
+              "border_color_hover": "#009a98"
+            }
+          },
+          "1544810578446": {
+            "type": "testimonial",
+            "settings": {
+              "bg_color": "#ffffff",
+              "border_color": "#d82530",
+              "title_color": "#000000",
+              "subtitle_color": "#d82530",
+              "title_bold": false,
+              "subtitle_bold": true,
+              "link": "shopify:\/\/collections\/tonus-citrus-corps",
+              "logo": "shopify:\/\/shop_images\/tonus-citrus_400x400_200x_b1a2eb7c-2af4-4c2e-9394-a3050e0234a6.png",
+              "title": "DYNAMISANT (CORPS)",
+              "subtitle": "[Tonus Citrus]",
+              "logo_hover": "shopify:\/\/shop_images\/tonus-citrus_400x400_hover_134x134_crop_center_2x_10d7aacf-c064-4592-b32c-78d8b804b7ca.png",
+              "bg_hover_color": "#d82530",
+              "title_hover_color": "#ffffff",
+              "subtitle_hover_color": "#ffffff",
+              "border_color_hover": "#d82530"
+            }
+          },
+          "1559740456982": {
+            "type": "testimonial",
+            "settings": {
+              "bg_color": "#ffffff",
+              "border_color": "#5886d9",
+              "title_color": "#000000",
+              "subtitle_color": "#5886d9",
+              "title_bold": true,
+              "subtitle_bold": true,
+              "link": "\/",
+              "title": "Hydratant Apaisant",
+              "subtitle": "[Hydra Malva]",
+              "bg_hover_color": "#5886d9",
+              "title_hover_color": "#ffffff",
+              "subtitle_hover_color": "#ffffff",
+              "border_color_hover": "#5886d9"
+            }
+          }
+        },
+        "block_order": [
+          "1544711668357-0",
+          "1544719080119",
+          "1544719081207",
+          "1544719082361",
+          "1544810348479",
+          "1544810473982",
+          "1544810578446",
+          "1559740456982"
+        ],
+        "settings": {
+          "autoplay": false,
+          "cycle_speed": 5,
+          "border_height": 5
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "show_shipping_estimator": false,
+          "shipping_estimator_default_country": "United States"
+        }
+      },
+      "1554458631993": {
+        "type": "featured-video",
+        "settings": {
+          "section_size": "small",
+          "text_color": "#000000",
+          "subheading": "",
+          "title": "Découvrez S[aè]ve",
+          "image": "shopify:\/\/shop_images\/I-love-trees.jpg",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=XyU-i0qxs2w"
+        }
+      },
+      "instafeed-zerance": {
+        "type": "instafeed-zerance",
+        "settings": {
+          "access_token_insta": "7330671957.1677ed0.edf68579e258485fbfe5c1c7a2af4860",
+          "title": "Des instantanés très nature"
+        }
+      },
+      "1575243714682": {
+        "type": "slideshow",
+        "blocks": {
+          "1593154496110": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slide_ope_retour_fluide_V2_1920x1200_6c104a6f-d42e-4fc6-b714-0eb7ba724bb5.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/slide_ope_retour_fluide_750x1100_e5fa3683-55bc-4c1c-9283-007b5debe250.jpg",
+              "apply_overlay": true,
+              "content_position": "middleLeft",
+              "subheading": "[BACK IN STOCK]",
+              "title": "<p>Le<strong> Fluide Botanique Purifiant<\/strong><\/p><p>est ENFIN de retour !<\/p>",
+              "title-size": 22,
+              "title_mobile": "<p><br\/>Le <strong>Fluide Botanique Purifiant<\/strong><\/p><p>est ENFIN de retour !<\/p>",
+              "title-mobile-size": 15,
+              "button_1_text": "JE FONCE !",
+              "button_1_link": "shopify:\/\/products\/fluide-botanique-purifiant-40-ml",
+              "button_2_text": "",
+              "text_color": "#000000",
+              "text_color_mobile": "#000000",
+              "button_color": "#ffffff",
+              "button_color_mobile": "#ffffff"
+            }
+          },
+          "1600076058346": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slide_paradisi_rituel_zerodefaut_1920x1200_44ec9ed6-e2f7-4bb9-b627-657dc4e59fcb.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/slide_paradisi_rituel_zerodefaut_V2_750x1100_98870841-ce05-472e-8e7a-2489b16761e3.jpg",
+              "apply_overlay": true,
+              "content_position": "middleLeft",
+              "subheading": "[BACK IN STOCK]",
+              "title": "<p>Le <strong>Rituel Pur Paradisi<\/strong><\/p><p>pour une <strong>peau parfaite<\/strong><\/p><p>est ENFIN de retour !<\/p>",
+              "title-size": 23,
+              "title_mobile": "<p><\/p><p>Le <strong>Rituel Pur Paradisi <\/strong>pour une <strong>peau parfaite <\/strong>est ENFIN de retour !<\/p>",
+              "title-mobile-size": 15,
+              "button_1_text": "JE FONCE !",
+              "button_1_link": "https:\/\/saeve.com\/collections\/exclu-web\/products\/le-rituel-peau-zero-defaut",
+              "button_2_text": "",
+              "text_color": "#ffffff",
+              "text_color_mobile": "#161616",
+              "button_color": "#161616",
+              "button_color_mobile": "#ffffff"
+            }
+          },
+          "1592903267225": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slide_ope_bestsellers_purpara_V2b_1920x1200_3a25c972-d11f-4a10-bb0b-b42542a8d335.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/slide_ope_bestsellers_purpara_prix_750x1100_b1adc266-014d-46d8-8527-827fe52e36fe.jpg",
+              "apply_overlay": true,
+              "content_position": "middleLeft",
+              "subheading": "[BEST SELLER]",
+              "title": "<p>Découvrez<strong> le Sérum botanique<\/strong><\/p><p><strong>purifiant anti-imperfections <\/strong>!<\/p><p><strong>N°1 de nos ventes<\/strong>, il a reçu<\/p><p>la Victoire de la Beauté 2019-2020.<\/p>",
+              "title-size": 23,
+              "title_mobile": "<p><\/p><p>Découvrez<strong> le Sérum botanique<\/strong><\/p><p><strong>purifiant anti-imperfections <\/strong>!<\/p><p><strong>N°1 de nos ventes.<\/strong><\/p>",
+              "title-mobile-size": 15,
+              "button_1_text": "JE CRAQUE !",
+              "button_1_link": "shopify:\/\/products\/serum-botanique-purifiant-anti-imperfections-30-ml",
+              "button_2_text": "",
+              "text_color": "#000000",
+              "text_color_mobile": "#000000",
+              "button_color": "#ffffff",
+              "button_color_mobile": "#ffffff"
+            }
+          },
+          "1589554493219": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slide_ope_rituelLift_1920x1200_291118fa-cd54-4253-98bc-52332c176f45.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/slide_ope_rituelLift_750x1100_d011dfbe-cef8-4b2a-97cf-c75287ed4970.jpg",
+              "apply_overlay": true,
+              "content_position": "middleLeft",
+              "subheading": "[LIFT PINASTER]",
+              "title": "<p>Notre <strong>Rituel Lift <\/strong>véritable<\/p><p>cure de jouvence au naturel.<\/p>",
+              "title-size": 22,
+              "title_mobile": "<p><\/p><p>Notre <strong>Rituel Lift <\/strong>véritable<\/p><p>cure de jouvence au naturel.<\/p>",
+              "title-mobile-size": 15,
+              "button_1_text": "JE LE VEUX !",
+              "button_1_link": "https:\/\/saeve.com\/collections\/lift-pinaster-anti-age-fermete",
+              "button_2_text": "",
+              "text_color": "#000000",
+              "text_color_mobile": "#000000",
+              "button_color": "#ffffff",
+              "button_color_mobile": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1593154496110",
+          "1600076058346",
+          "1592903267225",
+          "1589554493219"
+        ],
+        "settings": {
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5
+        }
+      },
+      "1589974928749": {
+        "type": "maestrooo-instagram",
+        "settings": {
+          "title": "INSTAGRAM",
+          "subheading": "<p>Des instantanés très nature<\/p>",
+          "button_text": "",
+          "layout": "grid",
+          "image_size": "small",
+          "full_width": true,
+          "add_spacing": true,
+          "rows_count": 1,
+          "show_author": false,
+          "show_caption": false,
+          "show_date": false,
+          "click_action": "open_instagram",
+          "heading_color": "#000000",
+          "subheading_color": "#000000",
+          "button_background": "#000000",
+          "button_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_text_color": "#ffffff",
+          "overlay_opacity": 37
+        }
+      },
+      "maestrooo-instagram": {
+        "type": "maestrooo-instagram",
+        "settings": {
+          "title": "INSTAGRAM",
+          "subheading": "<p>Des instantanés très nature<\/p>",
+          "button_text": "",
+          "layout": "grid",
+          "image_size": "small",
+          "full_width": false,
+          "add_spacing": true,
+          "rows_count": 1,
+          "show_author": false,
+          "show_caption": true,
+          "show_date": true,
+          "click_action": "open_instagram",
+          "heading_color": "#000000",
+          "subheading_color": "#000000",
+          "button_background": "#000000",
+          "button_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_text_color": "#ffffff",
+          "overlay_opacity": 65
+        }
+      }
+    },
+    "content_for_index": [
+      "1575243714682",
+      "1542056157977",
+      "featured-product",
+      "1537790264860",
+      "1537801940276",
+      "1544711668357",
+      "1543070901578",
+      "1543424278012",
+      "featured-collections",
+      "1537792773171",
+      "1554458631993",
+      "1543399754066",
+      "blog-posts",
+      "1537793074458",
+      "1540937027111",
+      "1589974928749",
+      "1542282432014"
+    ]
+  },
+  "presets": {
+    "Allure": {
+      "heading_color": "#1c1b1b",
+      "text_color": "#1c1b1b",
+      "text_light_color": "#6a6a6a",
+      "link_color": "#6a6a6a",
+      "background": "#efefef",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#1c1b1b",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#1c1b1b",
+      "header_light_color": "#6a6a6a",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#1c1b1b",
+      "footer_text_color": "#6a6a6a",
+      "newsletter_popup_background": "#1c1b1b",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#1c1b1b",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#1c1b1b",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "montserrat_n5",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "nunito_sans_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": false,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "page",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": 50,
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#efefef",
+      "checkout_accent_color": "#1c1b1b",
+      "checkout_button_color": "#1c1b1b",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#000000",
+            "text_color": "#ffffff",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "<p>Tell your story<\/p>"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "<p>Tell your story<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Récemment consultés",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "enable_image_zoom": true,
+            "show_thumbnails": false,
+            "reviews_enabled": false
+          }
+        },
+        "related-products": {
+          "type": "related-products",
+          "settings": {
+            "show_section": true,
+            "title": "Related Products",
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Couture": {
+      "heading_color": "#000000",
+      "text_color": "#000000",
+      "text_light_color": "#939393",
+      "link_color": "#323232",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#000000",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#000000c",
+      "header_light_color": "#939393",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#000000",
+      "footer_text_color": "#939393",
+      "newsletter_popup_background": "#ffffff",
+      "newsletter_popup_text_color": "#1c1b1b",
+      "secondary_elements_background": "#000000",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#ffffff",
+      "navigation_text_color": "#000000",
+      "heading_font": "futura_n4",
+      "heading_size": "large",
+      "uppercase_heading": false,
+      "text_font": "century_gothic_n4",
+      "base_text_font_size": 15,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "left",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "small",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "page",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": 50,
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#323232",
+      "checkout_button_color": "#000000",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f3f3f3",
+            "text_color": "#000000",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "center",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "<p>Tell your story<\/p>"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "<p>Tell your story<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Récemment consultés",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "enable_image_zoom": true,
+            "show_thumbnails": false,
+            "reviews_enabled": false
+          }
+        },
+        "related-products": {
+          "type": "related-products",
+          "settings": {
+            "show_section": true,
+            "title": "Related Products",
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Vogue": {
+      "heading_color": "#454545",
+      "text_color": "#454545",
+      "text_light_color": "#9d9d9d",
+      "link_color": "#a17c5e",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#c2a284",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#454545",
+      "header_light_color": "#9d9d9d",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#454545",
+      "footer_text_color": "#9d9d9d",
+      "newsletter_popup_background": "#454545",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#f1e4d8",
+      "secondary_elements_text_color": "#373737",
+      "navigation_background": "#454545",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "din_neuzeit_grotesk_n3",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "futura_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "show_element_staggering": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "page",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": 50,
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#a17c5e",
+      "checkout_button_color": "#454545",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f1e4d8",
+            "text_color": "#343434",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "<p>Tell your story<\/p>"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "<p>Tell your story<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Récemment consultés",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "enable_image_zoom": true,
+            "show_thumbnails": false,
+            "reviews_enabled": false
+          }
+        },
+        "related-products": {
+          "type": "related-products",
+          "settings": {
+            "show_section": true,
+            "title": "Related Products",
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    }
+  }
+}

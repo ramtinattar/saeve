@@ -1,0 +1,146 @@
+{% if section.settings.isActivate == true %}
+<div id="popup-youtube" class="popup-full">
+  <section class="popup-full__wrapper">
+    <div class="absolute-cross">x</div>
+    <iframe class="popup-full__video" src="https://www.youtube.com/embed/{{ section.settings.id }}?rel=0" frameborder="0" allowfullscreen="" kwframeid="1"></iframe>
+  </section>
+</div>
+<script>
+  function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days*24*60*60*1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+  }
+  
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+  }
+  
+  function eraseCookie(name) {   
+    document.cookie = name+'=; Max-Age=-99999999;';  
+  }
+  
+  function canAffPopup() {
+    return !(getCookie("see_popup_yt"));  
+  }
+
+  function displayPopup() {
+    if (canAffPopup())
+      $('#popup-youtube').fadeIn();
+    console.log("display");
+
+  }
+  
+  function removePopup() {
+    $('#popup-youtube').fadeOut();
+    $('#popup-youtube iframe').remove();
+    setCookie("see_popup_yt",true,{{ section.settings.new_popup }});
+  }
+  
+  $(document).ready(function(){
+          console.log("ready");
+
+    setTimeout(displayPopup, {{ section.settings.time }});
+               
+    $('#popup-youtube, .absolute-cross').on('click', function() {
+      removePopup();
+    });
+
+  });
+</script>
+{% endif %}
+{% schema %}
+  {
+    "name": "Popup Youtube",
+    "settings": [
+      {
+         "type":      "checkbox",
+         "id":        "isActivate",
+         "label":     "Activé la popup",
+         "default":   true,
+         "info":      "décocher pour désactiver"
+      },
+      {
+        "type": "text",
+        "id": "time",
+        "label": "Temps d'apparition de la popup",
+        "default": "5000",
+		"info" : "En milli-secondes (ex : 3000 = 3 secondes)"
+      },
+      {
+        "type": "text",
+        "id": "new_popup",
+        "label": "Temps de ré-apparition de la popup après fermeture",
+        "default": "30",
+		"info" : "En jours"
+      },
+	  {
+		"type": "text",
+         "id": "id",
+         "label": "Id de la video youtube",
+         "default":"XyU-i0qxs2w"
+	  }
+    ],
+    "presets": [{
+      "name": "Popup Youtube",
+      "category": "Custom - Zerance"
+    }]
+  }
+{% endschema %}
+{% stylesheet %}
+.popup-full {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  background:rgba(0, 0, 0, 0.6);
+  z-index:10;
+  display:none;
+}
+.popup-full__wrapper {
+  width: 50%;
+  min-width: 320px;
+  max-width: 600px;
+  position:absolute;
+  left:50%;
+top: calc(50% + 25px);
+transform:translate(-50%,-50%);
+  height: 0;
+  padding-bottom: 48%;
+}
+
+.absolute-cross {
+  cursor: pointer;
+  position: absolute;
+  top: -1px;
+  right: 7px;
+  z-index: 9999;
+  color: black;
+  font-family: fantasy;
+  font-size: 18px;
+}
+
+
+.popup-full__video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; top: 0;
+  max-height: 80vh;
+  padding:20px;
+  background:white;
+}
+{% endstylesheet %}

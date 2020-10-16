@@ -1,0 +1,170 @@
+<section class="tryptique">
+  <div class="container-tryptique">
+    <div class="contain-top">
+      <img src="//cdn.shopify.com/s/files/1/0049/9908/6193/files/logo-mini.png?v=1547476393" alt="Saeve" width="125" height="42">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+    <div class="container-all-blocks owl-carousel" id="tryptique-carousel">
+      {% for block in section.blocks %}
+        <div class="container-block col-sm-12 col-lg-3">
+          <a href="{{ block.settings.link }}">
+          <div class="container-picture">
+            <img class="" src="{{ block.settings.image | img_url: '1024x' }}" alt="{{ block.settings.image.alt }}">
+            </div></a>
+          <a href="{{ block.settings.link }}" style="text-decoration: none;">
+          <div class="container-text" style="margin: 0px 30px 0px 30px;">
+            <h3>{{ block.settings.title }}</h3>
+            {{ block.settings.text }}
+            </div></a>
+        </div>
+
+      {% endfor %}
+      {%- if section.settings.display_image_made_france -%}
+        <div class="container-block col-sm-12 col-lg-3">
+          <div class="container-picture container-picture-madeinfrance">
+            <img class="Image--fadeIn Image--lazyLoaded" src="{{ section.settings.image_made_france | img_url: '1024x' }}" alt="{{ section.settings.image_made_france.alt }}">
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+<script>
+
+  function changeActive(e) {
+    // Remove o seletor classe de todos item
+    setTimeout(function() {
+        // Adiciona o seletor classe nos item da pagina ativa
+        $('#tryptique-carousel .owl-stage .active:first .block-engagement-bis').addClass('margin-first');
+    },0);
+}
+
+  var owl = $('#tryptique-carousel');
+// Segundo a documentação, os eventos "initialize" e "initialized"
+// devem ser anexados antes da inicialização do Carousel.
+owl.on('initialized.owl.carousel', changeActive);
+// Iniciamos o Carousel informando o callback
+
+
+
+
+$(window).resize(function() {
+        console.log("666asdf222");
+
+    var checkWidth = $(window).width();
+    var owlPost = $("#tryptique-carousel");
+    if (checkWidth > 1200) {
+        if (typeof owlPost.data('owl.carousel') != 'undefined') {
+            owlPost.data('owl.carousel').destroy();
+        }
+        owlPost.removeClass('owl-carousel');
+  }
+  else {
+    tryptique_carousel();
+  }
+});
+
+
+function tryptique_carousel() {
+  if ( $(window).width() <= 1200) {
+    $('#tryptique-carousel').addClass('owl-carousel');
+    $("#tryptique-carousel").owlCarousel({
+      items:1,
+      nav:true,
+      dot:false,
+      navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+        loop:true,
+        margin:0,
+        autoplay:false,
+        autoplayTimeout:3000,
+        smartSpeed:1000,
+        responsiveClass:true,
+        onChanged: changeActive,
+        onTranslate: changeActive,
+        responsive:{
+            0:{
+                items:1,
+            },
+          	560:{
+                items:1,
+            },
+            900:{
+                items:2,
+            },
+            1200:{
+                items:3,
+            }
+        }
+    });
+
+  } else {
+    $('#tryptique-carousel').removeClass('owl-carousel');
+  }
+}
+
+  tryptique_carousel();
+
+</script>
+{% schema %}
+  {
+    "name": "tryptique Visuel+Texte",
+    "settings": [
+	{
+      "type": "text",
+	  "id": "title",
+	  "label": "titre principal",
+	  "default": "En quelques mots"
+	},
+  {
+    "type": "checkbox",
+    "id": "display_image_made_france",
+    "label": "Afficher logo made in france",
+    "default": false
+  },
+  {
+    "type": "image_picker",
+    "id": "image_made_france",
+    "label": "Logo made in france"
+  }
+  ],
+	"blocks": [
+	{
+		"name": "visuel + text",
+		"type": "text_and_pict",
+		"settings": [
+		  {
+            "type": "image_picker",
+            "id": "image",
+            "label": "image 1"
+          },
+	      {
+             "type": "text",
+             "id": "title",
+             "label": "Titre"
+          },
+          {
+            "id": "text",
+            "type": "richtext",
+            "label": "texte"
+          },
+          {
+          "type": "url",
+          "id": "link",
+          "label": "Lien",
+		  "default": "/"
+          }
+		]
+	  }
+	],
+    "presets": [{
+      "name": "Trypique visuel + texte",
+      "category": "Custom - Zerance"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

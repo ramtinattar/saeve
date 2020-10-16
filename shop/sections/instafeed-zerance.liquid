@@ -1,0 +1,87 @@
+<script src="https://cdn.bootcss.com/instafeed.js/1.4.1/instafeed.js"></script>
+
+<section class="instagram">
+  <img class="instagram-background" src="https://cdn.shopify.com/s/files/1/0049/9908/6193/files/bg-inside-insta2.png?v=1547472889" alt="background instagram">
+  <div class="instagram-header">
+    <img class="instagram-header__image" src="https://cdn.shopify.com/s/files/1/0049/9908/6193/files/insta-saeve-footer.png?v=1547474344" alt="Instagram Saève" width="158" height="32">
+    <p class="instagram-header__title">{{ section.settings.title }}</p>
+  </div>
+
+  <div class="relative only-desktop">
+    <div id="instagram-feed">
+    </div>
+  </div>
+
+  <div class="only-mobile">
+    <div id="instagram-feed-mobile">
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '7330671957',
+    limit: 4,
+    accessToken: '{{ section.settings.access_token_insta }}',
+    success:function(data){
+
+      var images = data.data;
+      var x = 0;
+      while (x < 4)
+      {
+        var image = images[x];
+        var div = document.createElement('div');
+        div.setAttribute("class", "block-insta");
+        var lien = document.createElement('a');
+
+        lien.setAttribute("href", images[x].link);
+        lien.setAttribute("target", "_blank");
+
+        var imageBalise = document.createElement('img');
+        var src = image.images.standard_resolution.url;
+
+        imageBalise.setAttribute("src", src);
+     	div.appendChild(lien).appendChild(imageBalise);
+        document.getElementById('instagram-feed').appendChild(div);
+    	if (x < 3)
+	    	document.getElementById('instagram-feed-mobile').appendChild(div.cloneNode(true));
+        x++;
+
+      }
+    }
+  });
+  userFeed.run();
+
+</script>
+
+{% schema %}
+  {
+    "name": "Instafeed Zerance",
+    "settings": [
+      {
+        "type": "text",
+        "id": "access_token_insta",
+        "label": "Access token",
+        "default": "7330671957.1677ed0.204bc298a5cd4345ab7eedce4f43d4b3"
+      },
+	  {
+		"type": "text",
+		"id": "title",
+		"label": "titre principal",
+		"default": "Des instantanés très nature"
+	  }
+	],
+    "presets": [
+      {
+        "category": "Custom zerance",
+        "name": "Instagram Zerance",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}
+
+
+{% javascript %}
+{% endjavascript %}

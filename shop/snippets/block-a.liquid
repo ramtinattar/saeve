@@ -1,0 +1,83 @@
+<div class="question">
+  <h3 data-handle="{{ block.settings.handle }}" class="inlineB typist-{{ block.id }} ">{{ block.settings.title }}</h3>
+  
+  {% unless block.settings.explain == blank %}
+  <h4 class="inlineCommentary littleExplainBot">{{ block.settings.explain }}</h4>
+  {% endunless %}
+  
+  <div class="choice">
+
+    <div data-handle="{{ block.settings.handle1 }}" class="unique-choice enterButton">
+      <h5 class="">{{ block.settings.choice1 }}</h5>
+      <h6 class="">
+		{{ block.settings.explainchoice1 }}
+      </h6>
+    </div>
+    
+    <div data-handle="{{ block.settings.handle2 }}" class="unique-choice enterButton">
+      <h5 class="">{{ block.settings.choice2 }}</h5>
+      <h6 class="">
+		{{ block.settings.explainchoice2 }}
+      </h6>
+    </div>
+    
+    {% unless block.settings.choice3 == "" or block.settings.choice3 == nil %}
+    <div data-handle="{{ block.settings.handle3 }}" class="unique-choice enterButton">
+      <h5 class="">{{ block.settings.choice3 }}</h5>
+      <h6 class="">
+        {{ block.settings.explainchoice3 }}
+      </h6>
+    </div>
+    {% endunless %}
+    
+    {% unless block.settings.choice4 == "" or block.settings.choice4 == nil %}
+    <div data-handle="{{ block.settings.handle4 }}" class="unique-choice enterButton">
+      <h5 class="">{{ block.settings.choice4 }}</h5>
+      <h6 class="">
+        {{ block.settings.explainchoice4 }}
+      </h6>
+    </div>
+    {% endunless %}
+    
+    {% unless block.settings.choice5 == "" or block.settings.choice5 == nil %}
+    <div data-handle="{{ block.settings.handle5 }}" class="unique-choice enterButton">
+      <h5 class="">{{ block.settings.choice5 }}</h5>
+      <h6 class="">
+        {{ block.settings.explainchoice5 }}
+      </h6>
+    </div>
+    {% endunless %}
+    
+    {% unless block.settings.choice6 == "" or block.settings.choice6 == nil %}
+    <div data-handle="{{ block.settings.handle6 }}" class="unique-choice enterButton">
+      <h5 class="">{{ block.settings.choice6 }}</h5>
+      <h6 class="">
+        {{ block.settings.explainchoice6 }}
+      </h6>
+    </div>
+    {% endunless %}
+    
+    
+  </div>
+</div>
+
+<script>
+  var choice = "";
+  var handle_title = "";
+  
+  $('.enterButton').click(function() {
+    choice = $(this).attr('data-handle');
+    handle_title = $(this).parent().parent().find('h3').data('handle');
+    console.log(choice, handle_title);
+  });
+  
+  function validateBlockA{{ block.id }}(currentBlock) {
+    if (handle_title)
+      tags[handle_title] = choice;
+    $('.owl-next').click();
+    currentBlock++;
+    choice = "";
+    return currentBlock;
+    
+  }
+</script>

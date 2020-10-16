@@ -1,0 +1,41 @@
+<section class="error-404">
+  <div class="container-404">
+    
+    <h2>{{ section.settings.title }}</h2>
+    <p class="subtitle">{{ section.settings.subtitle1 }}</p>
+    {{ section.settings.subtitle2 }}
+    <a href="/"><img src="https://s3.eu-west-3.amazonaws.com/saeve/cerf404.png" alt="404_img"></a>
+    
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Error 404",
+    "settings": [
+        {
+        "type": "text",
+        "id": "title",
+        "default": "OUPS !",
+        "label": "Titre photo 1"
+        },
+        {
+        "id": "subtitle1",
+        "type": "text",
+		"default": "Il semblerait que cette page n'existe pas ou plus.",
+        "label": "texte"
+        },
+        {
+        "id": "subtitle2",
+        "type": "richtext",
+		"default": "<p>Enfourchez notre cerf adoré, il vous ramènera à la page d'accueil</p>",
+        "label": "texte"
+        }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

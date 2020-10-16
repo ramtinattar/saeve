@@ -1,0 +1,500 @@
+<script>
+  var blockTypes = [];
+  {% for block in section.blocks %}
+  blockTypes[{{ forloop.index}}] = [];
+  blockTypes[{{ forloop.index}}][0] = '{{ block.type }}';
+  blockTypes[{{ forloop.index}}][1] = '{{ block.id }}';
+  {% endfor%}
+
+  function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
+  function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  
+</script>
+
+{% if section.settings.hide-layout == true %}
+<style>
+    {{ section.settings.header-selector }}, {{ section.settings.footer-selector }}, #shopify-section-header, header, nav, footer, #shopify-section-footer, .header, .footer {
+      display: none;
+    }
+    #mainQuizz, .quizz-block-container {
+      height: 100vh;
+      width: 100vw;
+    }
+    #mainQuizz .quizz-block-container .quizz-block {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+</style>
+{% else %}
+<style>
+  #mainQuizz {
+    padding:{{ section.settings.padding }};
+  }
+</style>
+{% endif %}
+
+<div class="quizz-container">
+  
+  <h2>{{ section.settings.title }}
+  <img src="https://cdn.shopify.com/s/files/1/0049/9908/6193/files/logo_2.png?1883751311291821466" alt="logo saeve" class="logo-quizz">
+  </h2>
+  {% if section.settings.show-breadcrumb == true %}
+  {% for block in section.blocks %}
+  {% assign nbDots = forloop.length %}
+  {% endfor %}
+  <div class="breadcrumb">
+    {% include 'breadcrumb' with 'nbDots': nbDots %}
+  </div>
+  {% endif %}
+  <div class="main owl-carousel owl-theme" id="mainQuizz">
+
+    {% for block in section.blocks %}
+    	<div class="quizz-block-container block-{{ forloop.index }}">
+
+        {% comment %}Block explicatif -> Correspond a un block qui explique avec bouton next {% endcomment %}
+        {% if block.type == 'block-explain-with-cta' %}
+        {% include 'block-explain-with-cta' %}
+
+        {% comment %} Correspond a une question a choix unique (2/3 reponse) reponse sous forme de rond {% endcomment %}
+        {% elsif block.type == 'block-a' %}
+        {% include 'block-a' %}
+
+    	{% comment %} Correspond a une question a choix unique (2/3 reponse) reponse sous forme de rond avec Image en plus {% endcomment %}
+        {% elsif block.type == 'block-b' %}
+        {% include 'block-b' %}
+ 
+        {% comment %} Correspond a une question avec reponse ouverte {% endcomment %}
+        {% elsif block.type == 'block-c' %}
+        {% include 'block-c' %}
+
+        {% endif %}
+
+    	</div>
+    {% endfor %}
+
+  </div>
+  {% unless section.settings.back-button == blank %}
+    <div class="backButton"><i class="fas fa-arrow-left"></i> {{ section.settings.back-button }}</div>
+  {% endunless %}
+</div>
+
+<script>
+  var currentBlock = 1;
+  var tags = [];
+  var maxquizz = {{ nbDots }};
+
+  $('.owl-carousel').owlCarousel({
+    loop:false,
+    items:1,
+    nav:true,
+    navSpeed : {{ section.settings.speed }},
+    mouseDrag : {{ section.settings.debug }},
+    touchDrag : {{ section.settings.debug }},
+    dots :false
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Quizz",
+	"class": "Quizz",
+	"max_blocks": 50,
+    "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titre",
+          "default": "Mon Diag' Beauté by "
+        },
+		{
+          "type":      "checkbox",
+          "id":        "debug",
+          "label":     "Debug mode",
+          "default":   false,
+          "info":      "Permet de slider avec la souris sans la validation des questions"
+        },
+        {
+          "type" : "header",
+          "content" : "Global"
+        },
+		    {
+          "type":   "range",
+          "id":     "speed",
+          "min":       100,
+          "max":       9900,
+          "step":      100,
+          "unit":      "ms",
+          "label":     "Temps entre 2 slide",
+    		  "default":   1000
+        },
+        {
+          "type": "checkbox",
+          "id": "hide-layout",
+          "label": "Hide header and footer for full screen mode",
+          "info" : "All contents will be center",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "padding",
+          "label": "Padding",
+          "default": "100px",
+          "info": "Only if you are not in full screen mode"
+        },
+        {
+          "type": "text",
+          "id": "back-button",
+          "label": "Back button",
+          "default": "Go back",
+          "info": "Let this empty for remove the back button"
+        },
+        {
+          "type": "checkbox",
+          "id": "show-breadcrumb",
+          "label": "Show breadcrumb",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "validate_btn",
+          "label": "Bouton valider",
+          "default": "Valider"
+		}
+	],
+	"blocks" : [
+      {
+        "type": "block-a",
+        "name": "Question fermé rond",
+        "settings": [
+          {
+            "type": "text",
+            "id": "handle",
+            "label": "Handle de la question",
+            "info" : "Laisser vide pour que la question ne soit pas prise en compte"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "text",
+            "id": "explain",
+            "label": "Phrase explicatif en dessous du titre"
+          },
+		  {
+            "type": "text",
+            "id": "choice1",
+            "label": "Choix 1 (required)"
+          },
+		  {
+            "type": "text",
+            "id": "explainchoice1",
+            "label": "Explication Choix 1 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "handle1",
+            "label": "Handle Choix 1 (sert a recup la reponse client pour l'algo)",
+			"info" : "Ne pas toucher"
+          },
+		  {
+            "type": "text",
+            "id": "choice2",
+            "label": "Choix 2 (required)"
+          },
+		  {
+            "type": "text",
+            "id": "explainchoice2",
+            "label": "Explication Choix 2 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "handle2",
+            "label": "Handle Choix 2 (sert a recup la reponse client pour l'algo)",
+			"info" : "Ne pas toucher"
+          },
+		  {
+            "type": "text",
+            "id": "choice3",
+            "label": "Choix 3 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "explainchoice3",
+            "label": "Explication Choix 3 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "handle3",
+            "label": "Handle Choix 3 (sert a recup la reponse client pour l'algo)",
+			"info" : "Ne pas toucher"
+          },
+		  {
+            "type": "text",
+            "id": "choice4",
+            "label": "Choix 4 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "explainchoice4",
+            "label": "Explication Choix 4 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "handle4",
+            "label": "Handle Choix 4 (sert a recup la reponse client pour l'algo)",
+			"info" : "Ne pas toucher"
+          },
+		  {
+            "type": "text",
+            "id": "choice5",
+            "label": "Choix 5 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "explainchoice5",
+            "label": "Explication Choix 5 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "handle5",
+            "label": "Handle Choix 4 (sert a recup la reponse client pour l'algo)",
+			"info" : "Ne pas toucher"
+          },
+		  {
+            "type": "text",
+            "id": "choice6",
+            "label": "Choix 6 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "explainchoice6",
+            "label": "Explication Choix 6 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "handle6",
+            "label": "Handle Choix 6 (sert a recup la reponse client pour l'algo)",
+			"info" : "Ne pas toucher"
+          }
+        ]
+      },
+	  {
+        "type": "block-b",
+        "name": "Question f rond / image",
+        "settings": [
+          {
+            "type": "text",
+            "id": "handle",
+            "label": "Handle de la question",
+            "info" : "Laisser vide pour que la question ne soit pas prise en compte"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "text",
+            "id": "explain",
+            "label": "Phrase explicatif en dessous du titre"
+          },
+		  {
+            "type": "text",
+            "id": "choice1",
+            "label": "Choix 1 (required)"
+          },
+		  {
+            "type": "text",
+            "id": "explainchoice1",
+            "label": "Explication Choix 1 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "handle1",
+            "label": "Handle Choix 1 (sert a recup la reponse client pour l'algo)",
+			"info" : "Ne pas toucher"
+          },
+          {
+            "type": "image_picker",
+            "id": "image1",
+            "label": "Image correspondante"
+          },
+		  {
+            "type": "text",
+            "id": "choice2",
+            "label": "Choix 2 (required)"
+          },
+		  {
+            "type": "text",
+            "id": "explainchoice2",
+            "label": "Explication Choix 2 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "handle2",
+            "label": "Handle Choix 2 (sert a recup la reponse client pour l'algo)",
+			"info" : "Ne pas toucher"
+          },
+		  {
+            "type": "image_picker",
+            "id": "image2",
+            "label": "Image correspondante"
+          },
+		  {
+            "type": "text",
+            "id": "choice3",
+            "label": "Choix 3 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "explainchoice3",
+            "label": "Explication Choix 3 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "handle3",
+            "label": "Handle Choix 3 (sert a recup la reponse client pour l'algo)",
+			"info" : "Ne pas toucher"
+          },
+		  {
+            "type": "image_picker",
+            "id": "image3",
+            "label": "Image correspondante"
+          },
+		  {
+            "type": "text",
+            "id": "choice4",
+            "label": "Choix 4 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "explainchoice4",
+            "label": "Explication Choix 4 (optionnel)"
+          },
+		  {
+            "type": "text",
+            "id": "handle4",
+            "label": "Handle Choix 4 (sert a recup la reponse client pour l'algo)",
+			"info" : "Ne pas toucher"
+          },
+		  {
+            "type": "image_picker",
+            "id": "image4",
+            "label": "Image correspondante"
+          }
+        ]
+      },
+	  {
+        "type": "block-c",
+        "name": "Entrée utilisateur",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+		  },
+		  {
+            "type": "text",
+            "id": "explain",
+            "label": "Phrase explicatif en dessous"
+		  },
+          {
+             "type": "select",
+             "id": "select-value",
+             "options": [
+                { "value": "name", "label": "Prénom"},
+                { "value": "age", "label": "Age"}
+             ],
+             "label": "Quel type de réponse ?"
+          },
+		  {
+            "type": "text",
+            "id": "error",
+            "label": "Erreur texte (only mail and age)"
+		  },
+		  {
+              "type":   "range",
+              "id":     "min_char",
+              "min":       1,
+              "max":       10,
+              "step":      1,
+              "unit":      "Car",
+              "label":     "Taille min",
+              "default":   1
+          },
+          {
+              "type":   "range",
+              "id":     "max_char",
+              "min":       1,
+              "max":       50,
+              "step":      1,
+              "unit":      "Car",
+              "label":     "Taille maxi",
+              "default":   20
+          },
+          {
+              "type":   "range",
+              "id":     "max_width",
+              "min":       0,
+              "max":       500,
+              "step":      5,
+              "unit":      "px",
+              "label":     "Taille input",
+              "default":   0
+          }
+        ]
+      },
+      {
+        "type": "block-explain-with-cta",
+        "name": "Explain block",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "label",
+            "label": "Texte explicatif"
+          },
+          {
+            "type": "text",
+            "id": "cta",
+            "label": "Titre du cta",
+            "default": "Ok"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Quizz",
+      "category": "Custom - Zerance",
+      "settings": {},
+      "blocks": []
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

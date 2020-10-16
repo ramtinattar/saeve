@@ -1,0 +1,40 @@
+{% case media.media_type %}
+    {% when 'image' %}
+      {% assign image = media %}
+      {%- if image.alt == 'featured' or image.alt == 'featured mobile' -%}
+        {%- continue -%}
+      {%- endif -%}
+
+      {%- assign is_video = false -%}
+
+      {%- if image.alt contains 'youtube.com/embed' or image.alt contains 'player.vimeo.com' -%}
+        {%- assign is_video = true -%}
+      {%- endif -%}
+      <a href="#Image{{ image.id }}" class="Product__SlideshowNavImage {% if is_video %}Product__SlideshowNavImage--video{% endif %} AspectRatio {% if forloop.first %}is-selected{% endif %}" style="--aspect-ratio: {{ image.aspect_ratio }}">
+        <img src="{{ image | img_url: '160x' }}">
+
+        {%- if is_video -%}
+          <button type="button" class="Product__SlideshowNavPlay" data-action="play-video" aria-label="{{ 'home_page.featured_video.play' | t }}">{% include 'icon' with 'play' %}</button>
+        {%- endif -%}
+      </a>
+    {% when 'external_video' %}
+      {% assign image = media %}
+      <a href="#Image{{ image.id }}" class="Product__SlideshowNavImage Product__SlideshowNavImage--video AspectRatio {% if forloop.first %}is-selected{% endif %}" style="--aspect-ratio: {{ image.aspect_ratio }}">
+        <img src="{{ image | img_url: '160x' }}">
+        <button type="button" class="Product__SlideshowNavPlay" data-action="play-video" aria-label="{{ 'home_page.featured_video.play' | t }}">{% include 'icon' with 'play' %}</button>
+      </a>
+    {% when 'video' %}
+      {% assign image = media %}
+      <a href="#Image{{ image.id }}" class="Product__SlideshowNavImage Product__SlideshowNavImage--video AspectRatio {% if forloop.first %}is-selected{% endif %}" style="--aspect-ratio: {{ image.aspect_ratio }}">
+        <img src="{{ image | img_url: '160x' }}">
+        <button type="button" class="Product__SlideshowNavPlay" data-action="play-video" aria-label="{{ 'home_page.featured_video.play' | t }}">{% include 'icon' with 'play' %}</button>
+      </a>
+    {% when 'model' %}
+      <div class="product-single__media" style="padding-top: 100%" data-media-id="{{ media.id }}">
+        {{ media | model_viewer_tag }}
+      </div>
+    {% else %}
+      <div class="product-single__media" style="padding-top: 100%;" data-media-id="{{ media.id }}">
+        {{ media | media_tag }}
+      </div>
+  {% endcase %}

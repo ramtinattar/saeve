@@ -1,0 +1,16 @@
+{% for i in (1..nbDots) %}
+	<div class="breadcrumb-container {% if forloop.last == true %}last{% endif %}">
+      <div class="breadcrumb-dot-container {% if forloop.first %}active{% endif %}">
+        <div class="breadcrumb-dot">{{ forloop.index }}</div>
+      </div>
+      <div class="breadcrumb-line"></div>
+	</div>
+{% endfor %}
+
+<script>
+  $(document).ready(function(){
+    var nbDots = {{ nbDots }};
+    var width = 100 / (nbDots - 1) + "%";
+  	$('.breadcrumb-container').css("width", width);
+  });
+</script>

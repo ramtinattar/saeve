@@ -1,0 +1,123 @@
+<section class="engagements-bis">
+  <div class="container-engagements-bis owl-carousel" id="engagements-carousel-bis">
+	{% for block in section.blocks %}
+    <div class="col-lg-2 block-engagement-bis">
+      <img src="{{ block.settings.image | img_url: '100x' }}" alt="{{block.settings.image.alt}}">
+      <h2>{{ block.settings.title }}</h2>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<script>
+
+  function changeActive(e) {
+    // Remove o seletor classe de todos item
+    $('#engagements-carousel-bis .block-engagement-bis').removeClass('margin-first');
+    setTimeout(function() {
+        // Adiciona o seletor classe nos item da pagina ativa
+        $('#engagements-carousel-bis .owl-stage .active:first .block-engagement-bis').addClass('margin-first');
+    },0);
+}
+
+  var owl = $('#engagements-carousel-bis');
+// Segundo a documentação, os eventos "initialize" e "initialized"
+// devem ser anexados antes da inicialização do Carousel.
+owl.on('initialized.owl.carousel', changeActive);
+// Iniciamos o Carousel informando o callback
+
+
+
+
+$(window).resize(function() {
+        console.log("666asdf222");
+
+    var checkWidth = $(window).width();
+    var owlPost = $("#engagements-carousel-bis");
+    if (checkWidth > 1200) {
+          $('#engagements-carousel-bis .block-engagement-bis').removeClass('margin-first');
+        if (typeof owlPost.data('owl.carousel') != 'undefined') {
+            owlPost.data('owl.carousel').destroy();
+        }
+        owlPost.removeClass('owl-carousel');
+  }
+  else {
+    carousel_engagements_bis();
+  }
+});
+
+
+function carousel_engagements_bis() {
+  if ( $(window).width() <= 1200) {
+    $('#engagements-carousel-bis').addClass('owl-carousel');
+    $("#engagements-carousel-bis").owlCarousel({
+      items:1,
+      nav:true,
+      dot:false,
+        navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+      loop:true,
+        margin:0,
+        autoplay:false,
+        autoplayTimeout:3000,
+        smartSpeed:1000,
+        responsiveClass:true,
+        onChanged: changeActive,
+        onTranslate: changeActive,
+        responsive:{
+            0:{
+                items:2,
+            },
+          	560:{
+                items:3,
+            },
+            900:{
+                items:4,
+            },
+            1200:{
+                items:5,
+            }
+        }
+    });
+
+  } else {
+    $('#engagements-carousel-bis .block-engagement-bis').removeClass('margin-first');
+    $('#engagements-carousel-bis').removeClass('owl-carousel');
+  }
+}
+
+  carousel_engagements_bis();
+
+</script>
+{% schema %}
+  {
+    "name": "Engagements bis",
+    "settings": [],
+	"blocks": [
+	  {
+		"type": "bandeau_engagements2",
+		"name": "engagements 2",
+		"settings": [
+		  {
+            "type": "image_picker",
+            "id": "image",
+            "label": "image 1"
+          },
+          {
+             "type": "text",
+             "id": "title",
+             "label": "Titre"
+          }
+		]
+	  }
+	],
+    "presets": [{
+      "name": "Engagements 2",
+      "category": "Custom - Zerance"
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

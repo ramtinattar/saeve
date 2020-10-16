@@ -1,0 +1,111 @@
+<section class="engagements">
+  <div class="container-engagements owl-carousel" id="engagements-carousel">
+    {% for block in section.blocks %}
+    <div class="block-engagement col-xs-12 col-sm-3">
+      <img src="{{ block.settings.image | img_url: '100x' }}"  alt="{{block.settings.image.alt}}">
+      <h2>{{ block.settings.title }}</h2>
+      <p>{{ block.settings.subtitle }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<script>
+
+
+$(window).resize(function() {
+    var checkWidth = $(window).width();
+    var owlPost = $("#engagements-carousel");
+    if (checkWidth > 700) {
+        if (typeof owlPost.data('owl.carousel') != 'undefined') {
+            owlPost.data('owl.carousel').destroy();
+        }
+        owlPost.removeClass('owl-carousel');
+  }
+  else {
+    carousel_engagements();
+  }
+});
+
+
+function carousel_engagements() {
+  if ( $(window).width() <= 700) {
+    $('#engagements-carousel').addClass('owl-carousel');
+    $("#engagements-carousel").owlCarousel({
+      items:1,
+      nav:true,
+      dot:false,
+        navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+      loop:true,
+        margin:0,
+        autoplay:true,
+        autoplayTimeout:3000,
+      smartSpeed:{{ section.settings.speed }},
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            800:{
+                items:2,
+            },
+            1200:{
+                items:1,
+            }
+        }
+    });
+
+  }
+}
+
+
+$( document ).ready(function() {
+   if ($(window).width() < 700) {
+    $('#engagements-carousel').addClass('owl-carousel');
+      carousel_engagements();
+  } else {
+    $('#engagements-carousel').removeClass('owl-carousel');
+  }
+});
+</script>
+{% schema %}
+  {
+    "name": "engagements 1",
+    "settings": [
+		  {
+             "type": "text",
+             "id": "speed",
+             "label": "Temps entre 2 slide",
+			 "default" : "500"
+		  }
+],
+	"blocks": [
+	  {
+		"type": "bandeau_engagements1",
+		"name": "engagements 1",
+		"settings": [
+		  {
+            "type": "image_picker",
+            "id": "image",
+            "label": "image"
+          },
+          {
+             "type": "text",
+             "id": "title",
+             "label": "Titre"
+          },
+          {
+             "type": "richtext",
+             "id": "subtitle",
+             "label": "sous-titres"
+          }
+		]
+	  }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

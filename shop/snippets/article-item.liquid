@@ -1,0 +1,116 @@
+{% assign wtu = false %}
+{% assign taga = "" %}
+{% assign location = false %}
+{% for tag in article.tags %}
+{% if tag == "aFEUILLES D'ACTU" %}
+{% assign wtu = true %}
+{% assign taga = tag %}
+{% endif %}
+{% endfor %}
+{% assign location = false %}
+{% assign current_url = '' %}
+
+{% capture current_url %}
+  {% case template %}
+    {% when 'page' %}{{page.url}}
+    {% when 'blog' %}{% if current_tags %}/{{ current_tags.first | handleize }}{% endif %}
+    {% when 'article' %}{{article.url}}
+    {% when 'collection' %}{{collection.url}}{% if current_tags %}/{{ current_tags.first | handleize }}{% endif %}
+    {% when 'product' %}{{product.url}}
+  {% endcase %}
+{% endcapture %}
+{% if current_url contains "afeuilles-dactu" %}
+{% assign location = true %}
+{% endif %}
+{% if location == true %}
+
+{% assign taga = taga | handleize %}
+<style>
+  [data-tag="{{ taga }}"] {
+  	aspect-ratio: 1 !important;
+  }
+</style>
+{% endif %}
+
+<article class="ArticleItem" {% if block %}{{ block.shopify_attributes }}{% endif %}>
+  {%- if article.image != blank -%}
+    {%- include 'image-size', sizes: '400', image: article.image -%}
+    {%- assign image_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+    <a class="ArticleItem__ImageWrapper AspectRatio AspectRatio--withFallback" style="background: url({{ article.image | img_url: '1x1', format: 'jpg' }}); padding-bottom: 58%; --aspect-ratio: 1.7" {% unless wtu == true and location == true %}href="{{ article.url }}"{% endunless %} data-tag="{{ taga }}" index="{{ forloop.index }}">
+      <img class="ArticleItem__Image Image--lazyLoad Image--fadeIn"
+           data-src="{{ image_url }}"
+           data-widths="[{{ supported_sizes }}]"
+           data-sizes="auto"
+           alt="{{ article.image.alt | escape }}">
+
+      <noscript>
+        <img class="ArticleItem__Image" src="{{ article.image | img_url: '600x' }}" alt="{{ article.image.alt | escape }}">
+      </noscript>
+    </a>
+  {%- endif -%}
+
+  <div class="ArticleItem__Content">
+    {%- if section.settings.show_category -%}
+      <span class="ArticleItem__Category Heading u-h6 Text--subdued">{{ article.tags.first }}</span>
+    {%- endif -%}
+
+    <h3 class="ArticleItem__Title Heading u-h2">
+      {% if wtu == true and location == true %}
+      <span  data-tag="{{ taga }}">{{ article.title }}</span>
+      {% else %}
+      <a href="{{ article.url }}">{{ article.title }}</a>
+      {% endif %}
+    </h3>
+    <p class="ArticleItem__Excerpt">{{ article.excerpt_or_content | strip_html | truncate: 150 }}</p>
+    <a href="{{ article.url }}" class="ArticleItem__Link Link Link--underline">{{ 'blog.article.read_more' | t }}</a>
+
+<!--     {% unless wtu == true and location == true %}
+    {%- unless template.name == 'article' -%}
+
+    {%- endunless -%}
+    {% endunless %} -->
+  </div>
+</article>
+
+{% if wtu == true and location == true %}
+<div class="Article__Popup" index-art="{{forloop.index}}">
+  <div class="Article__Container">
+    <i class="fas fa-times close" close-index="{{ florloop.index}}"></i>
+    <div class="Article__Content">
+      <div class="Title">{{ article.title }}</div>
+    {{ article.content | replace: '<h1', '<p'| replace: '<h2', '<p' | replace: '<h3', '<p' | replace: '<h4', '<p' | replace: '<h5', '<p' | replace: '<h1>', '<p>' | replace: '</h1>', '</p>' | replace: '<h2>', '<p>' | replace: '</h2>', '</p>' | replace: '<h3>', '<p>' | replace: '</h3>', '</p>' | replace: '<h4>', '<p>' | replace: '</h4>', '</p>' | replace: '<h5>', '<p>' | replace: '</h5>', '</p>' }}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+
+<script>
+  {% if taga != blank %}
+  if (window.location.href.indexOf("{{ taga | handleize }}") > -1) {
+  $('[data-tag="{{ taga | handleize }}"]').on('click', function(){
+    var index = $(this).attr("index");
+    $('[index-art="' + index + '"]').fadeIn();
+    });
+  $('.close').on('click', function() {
+      $('.Article__Popup').fadeOut();
+    });
+  }
+  var mouse_is_inside = false;
+
+  $(document).ready(function()
+                    {
+    $('[index-art="{{ forloop.index }}"] .Article__Container').hover(function(){
+      mouse_is_inside=true;
+    }, function(){
+      mouse_is_inside=false;
+    });
+
+    $("body").mouseup(function(){
+      if(! mouse_is_inside) $('[index-art="{{ forloop.index }}"]').fadeOut();
+    });
+  });
+    {% endif %}
+</script>

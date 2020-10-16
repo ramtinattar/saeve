@@ -1,0 +1,58 @@
+<section class="home-diagno">
+  <div class="container-home-diagno">
+    <img src="{{ section.settings.image | img_url: '1200x' }}" alt="home-diagno-bg">
+    <div class="block-text">
+      <div class="block-in">
+        <h2>{{ section.settings.title }}</h2>
+        <p>{{ section.settings.subtitle }} </p>
+        <a class="Button Button--primary Button--full" href="{{ section.settings.url }}">{{ section.settings.btn }}</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% schema %}
+  {
+    "name": "Home diagno",
+    "settings": [
+		  {
+            "type": "image_picker",
+            "id": "image",
+            "label": "image"
+          },
+		  {
+            "type": "text",
+            "id": "title",
+            "label": "titre"
+          },
+		  {
+            "type": "text",
+            "id": "subtitle",
+            "label": "sous-titre"
+          },
+		  {
+            "type": "text",
+            "id": "btn",
+            "label": "button text"
+          },
+  		  {
+            "type": "url",
+            "id": "url",
+            "label": "url button"
+          }
+	],
+  "presets": [
+    {
+      "category": "zerance",
+      "name": "Home diagno"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

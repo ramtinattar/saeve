@@ -1,0 +1,165 @@
+{%- comment -%} Capture the content for header containing the tracking data {%- endcomment -%}
+
+{%- assign parts = "" -%}
+{%- assign pageQuerystring = "" -%}
+{%- assign pageUrl = "" -%}
+{%- assign contentForQuerystring = "" -%}
+{%- assign keyAndValue = "" -%}
+
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+
+{% comment %} Use string splitting to pull the value from content_for_header and apply some string clean up {% endcomment %}
+{%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+-%}
+
+
+{% assign debug = true %}
+{%- for i in (1..1) -%}
+  {%- unless pageUrl contains "?" -%}{% break %}{%- endunless -%}
+  {%- unless pageUrl contains "cache=false" -%}{% break %}{%- endunless -%}
+  {% if pageUrl contains "text=alt" -%}
+  	{% assign alt = "Le complexe breveté <b>Immunox®</b> présent dans les soins Saeve, amplifiera l’action anti-oxydante et boostera les défenses cutanées pour une peau mieux armée contre les agressions extérieures (pollution, stress, UV…) et préservée des premiers signes de l’âge.<br><br><b>Vous verrez, votre peau seras plus belle !</b>" %}
+  {% else %}
+	{% assign alt = section.settings.text_droit %}
+  {% endif %}
+  {%- assign pageQuerystring = pageUrl | split:'?' | last -%}
+  {%- assign parts = pageQuerystring | split:'&' -%}
+{%- endfor -%}
+
+
+
+<div class="row page-result">
+  <div class="col-xs-12 col-sm-8">
+    <section class="result">
+      <div class="result_text col-xs-12"><p></p></div>
+      <h1 class="name">{{ section.settings.title_result_soin }}</h1>
+      <div class="result-soin row">
+        {%- for part in parts -%}
+        {%- comment -%} Split the part at the =. Not all querystrings will be in pairs so we need to account for that {%- endcomment -%}
+        {%- assign keyAndValue = part | split:'=' -%}
+        {%- if keyAndValue.size > 1 -%}
+        {% if keyAndValue[0] contains "soin" %}
+        {% assign product = all_products[keyAndValue[1]] %}
+        <div class="col-xs-12 col-sm-4 result-item__mobile">
+          <span  class="hidden">{{ keyAndValue[1] }}</span>
+          {%- include 'product-item', show_product_info: true, show_vendor: false, show_color_swatch: false, show_labels: true -%}
+        </div>
+        {% endif %}
+        {%- else -%}
+        {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </section>
+    <section class="result result--second">
+      <h1>{{ section.settings.title_result_comp }}</h1>
+      <div class="result-comp row">
+        {%- for part in parts -%}
+        {%- comment -%} Split the part at the =. Not all querystrings will be in pairs so we need to account for that {%- endcomment -%}
+        {%- assign keyAndValue = part | split:'=' -%}
+        {%- if keyAndValue.size > 1 -%}
+        {% if keyAndValue[0] contains "comp" %}
+        {% assign product = all_products[keyAndValue[1]] %}
+        <span class="hidden">{{ keyAndValue[1] }}</span>
+        <div class="col-xs-12 col-sm-4">
+          {%- include 'product-item', show_product_info: true, show_vendor: false, show_color_swatch: false, show_labels: true -%}
+        </div>
+        {% endif %}
+        {%- else -%}
+        {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </section>
+  </div>
+  <div class="col-xs-12 col-sm-4 result-description">
+    <h2>{{ section.settings.title_droit }}</h2>
+    <div class="description">{{ alt }}</div>
+  </div>
+
+</div>
+<script>
+
+  function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  var text = getCookie("result_text");
+  text = decodeURIComponent(text);
+  $('.name').html(getCookie("customer_name") + $('.name').html());
+  $('.result_text p').html(text);
+  $('.result_text p').css("text-align", "center");
+  function apply_responsive() {
+    if ($(window).width() < 768) {
+      $('.result-description').insertAfter($('.name'));
+      $('.result-description p').css("text-align", "center");
+      $('.result-description').css("position", "initial");
+    } else {
+      $('.result-description').insertAfter($('.col-xs-12.col-sm-8'));
+      $('.result-description').css("position", "sticky");
+      $('.result-description p').css("text-align", "right");
+    }
+  }
+  
+  $(document).ready(function() {
+    apply_responsive();
+    var url_string = window.location.href;
+	var url = new URL(url_string);
+    var soin1 = url.searchParams.get("soin1");
+    console.log(url_string);
+	console.log(soin1);
+  });
+  
+  $( window ).resize(function() {
+    apply_responsive();
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "resultat diagnostique",
+    "settings": [
+      {
+          "type" : "text",
+		  "label" : "Titre des soins principaux",
+          "default" : ", nous avons déniché pour vous le rituel beauté Saeve parfait qui va vous aider à faire peau neuve au naturel !",
+          "id" : "title_result_soin"
+      },
+	  {
+          "type" : "text",
+		  "label" : "Titre des soins principaux",
+          "default" : "Pour être encore plus rayonnante de beauté, complétez votre rituel beauté :",
+		  "id" : "title_result_comp"
+	  },
+ 	  {
+          "type" : "richtext",
+		  "label" : "Titre de la partie de droite",
+		  "default" : "<p>Le petit plus !<br/>(Mais pas si petit)</p>",
+          "id" : "title_droit"
+      },
+	  {
+          "type" : "richtext",
+		  "label" : "Texte de la partie de droite",
+		  "default" : "<p>Le complexe breveté Immunox® présent dans les soins Saeve, amplifiera l’action anti-oxydante et boostera les défenses cutanées pour une peau mieux armée contre les agressions extérieures (pollution, stress, UV…) et préservée des premiers signes de l’âge.<br/><strong>Vous verrez, votre peau seras plus belle !</strong></p>",
+		  "id" : "text_droit"
+	  }
+	] 
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

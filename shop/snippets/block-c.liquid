@@ -1,0 +1,75 @@
+<div class="question block-c">
+  <h3 class="explain-type-1">{{ block.settings.explain }}</h3>
+  <h2 handle="{{ block.settings.handle_db }}" class="inlineB typist-{{ block.id }}">{{ block.settings.title }}</h2>
+  <input id="input-underline-{{ block.id }}" style="line-height:0;max-width:{{ block.settings.max_width}}px" class="inlineB  input-underline input{{ block.settings.select-value }}" type="text" minlength="{{ block.settings.min_char }}" maxlength="{{ block.settings.max_char }}">
+  <div class=""><button class="enterButton arrowButton Button Button--primary">{{ section.settings.validate_btn }}</button></div>
+  <div class="error"></div>
+</div>
+<script>
+  $(document).ready(function(){
+    $('#input-underline-{{ block.id }}').keyup(function() {
+      if ($(this).next('.inlineB').find('.arrowButton').css("visibility") == "hidden")
+    	$(this).next('.inlineB').find('.arrowButton').css('visibility','visible').hide().fadeIn();
+      if ($(this).val().length >= {{ block.settings.min_char }})
+        $(this).next('.inlineB').find('.arrowButton').css("background-color", "#ffdebd");
+      else 
+        $(this).next('.inlineB').find('.arrowButton').css("background-color", "#F7EFE7");
+    });
+  });
+</script>
+<script>
+  var txt = $('h2.firstname').html();
+  
+  function displayError(message) {
+    $('.error').fadeOut();
+    $('.error').html(message);
+    $('.error').fadeIn(); 
+  }
+  
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+  
+  function validateBlockC{{ block.id }}(currentBlock) {
+	var result = $('.block-' + currentBlock + ' .input-underline').val();
+    
+    if (parseInt(result.length) < {{ block.settings.min_char }}) 
+    {
+        if ('{{ block.settings.select-value }}' == 'age')
+        {
+	        var text = "chiffre";
+        }
+        else
+        	var text = "lettre";
+        displayError("Entrez " + {{ block.settings.min_char }} + " " + text + " au minimum");   
+    }
+  	else
+	{
+    	if ('{{ block.settings.select-value }}' == 'name')
+        {
+            name = capitalizeFirstLetter(result);
+	        setCookie("customer_name", name, 30);
+        }
+        if ('{{ block.settings.select-value }}' == 'age')
+        {
+            if (isNaN(result))
+        	{
+          		displayError("Merci d'entrer un nombre.");
+                return currentBlock;
+        	}
+            else if (parseInt(result) < 0 ) {
+        		displayError("{{ block.settings.error }}");
+          		return currentBlock;
+        	}
+            age = parseInt(result);
+  			setCookie("customer_age",age,30); 
+        }
+                console.log("er1");
+          $('.owl-next').click();
+          currentBlock++;
+          $('.error').fadeOut();
+  	}
+    console.log("er");
+    return currentBlock;
+  }
+</script>

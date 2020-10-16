@@ -1,0 +1,173 @@
+<section class="ingredients">
+  <img src="//cdn.shopify.com/s/files/1/0209/8325/1008/files/cover_ingredients.jpg?v=1548932611" alt="cover_ingredients" style="margin-top: 31px; box-shadow: 0px -50px #ffffff; text-align: center;">
+  <br><br><h1 class="SectionHeader__Heading Heading u-h1" style="text-align: center; margin: 50px 0px 25px 0px; font-size: 32px;">{{ page.title }}</h1>
+  <div style="text-align: center; width: 70%; margin: 0 auto;">
+<p style="text-align: center; margin: 45px;"><img src="https://cdn.shopify.com/s/files/1/0209/8325/1008/files/brevet-immunox.png?6275" alt="Brevet Immunox" width="125" height="125" /></p>
+    <h2 style="text-align: center;"><strong>Du potager au pot : le secret des rem[aè]des</strong></h2>
+<p style="text-align: center;"><span>Saeve puise son inspiration dans la nature française, auprès de plantes et de fleurs paraissant, de prime abord, quelque peu ordinaires. Sélectionnées en réalité pour leur qualité exceptionnelle, elles sont cultivées dans un environnement familier et cueillies à la main par des producteurs locaux. Ce réseau de cueilleurs permet ainsi une traçabilité complète de nos produits, du potager au pot.</span></p>
+  </div>
+  <div class="container-ingredients" style="margin-bottom: -120px;">
+    {% for block in section.blocks %}
+    {% if block.type == "ingredients" %}
+    <div class="block-ingredients col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+      <div class="container-all">
+        <div class="container-image ing">
+          <img src="{{ block.settings.image | img_url: '1024x' }}"  alt="{{block.settings.image.alt}}">
+        </div>
+        <h2 class="title">{{ block.settings.name }}</h2>
+      </div>
+      <div class="container-hover" style="margin-left: 15px;">
+        <div class="all-hover">
+          <h2 class="title">{{ block.settings.name }}</h2>
+          {{ block.settings.description }}
+          <a index="{{ forloop.index }}" data-effect="mfp-zoom-in" class="btn-ingredient cta-see-mark absolute Button Button--primary">{{ section.settings.title_btn }}</a>
+        </div>
+      </div>
+      <div id="pop{{ forloop.index }}" class="container-popup">
+        <i class="fas fa-times close" index="{{ forloop.index }}"></i>
+      <h2 class="pop-title">{{ section.settings.title_popup }}</h2>
+
+        {% assign all = collections.produits %}
+
+        {% for product in all.products %}
+          {% if product.handle contains block.settings.product1 %}
+          	{% assign item1 = product %}
+          {% endif %}
+          {% if product.handle contains block.settings.product2 %}
+          	{% assign item2 = product %}
+          {% endif %}
+          {% if product.handle contains block.settings.product3 %}
+          	{% assign item3 = product %}
+          {% endif %}
+        {% endfor %}
+
+
+
+            <div class="col-xs-4">
+         <img class="product-img" src="{{ item1 | img_url: '1024x' }}"  alt="{{item1.alt}}">
+          <h3 class="prod-title">{{ item1.title }}</h3>
+          <h3 class="price">{{ item1.price | money_with_currency }}</h3>
+           <a href="{{ item1.url }}">
+             <button class="buy-popup cta-see-mark Button Button--primary" type="button">voir</button>
+              </a>
+      </div>
+
+            <div class="col-xs-4">
+         <img class="product-img" src="{{ item2 | img_url: '1024x' }}" alt="{{item2.alt}}">
+          <h3 class="prod-title">{{ item2.title }}</h3>
+          <h3 class="price">{{ item2.price | money_with_currency }}</h3>
+           <a href="{{ item2.url }}">
+             <button class="buy-popup cta-see-mark Button Button--primary" type="button">voir</button>
+              </a>
+      </div>
+        <div class="col-xs-4">
+         <img class="product-img" src="{{ item3 | img_url: '1024x' }}" alt="{{item3.alt}}">
+          <h3 class="prod-title">{{ item3.title }}</h3>
+          <h3 class="price">{{ item3.price | money_with_currency }}</h3>
+           <a href="{{ item3.url }}">
+             <button class="buy-popup cta-see-mark Button Button--primary" type="button">voir</button>
+              </a>
+      </div>
+    </div>
+    </div>
+
+    {% else %}
+    <div class="block-ingredients col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+      <div class="container-all">
+        <div class="container-image alpha">
+          <img src="{{ block.settings.image | img_url: '1024x' }}" alt="{{block.settings.image.alt}}">
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+  $('.btn-ingredient').on('click', function () {
+    var index = $(this).attr("index");
+    $('#pop' + index).fadeIn();
+  });
+  $('.close').on('click', function() {
+    var index = $(this).attr("index");
+	$('#pop' + index).fadeOut();
+  });
+
+
+
+</script>
+{% schema %}
+  {
+    "name": "Ingredient",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title_btn",
+        "label": "texte bouton",
+		"default": "Vous aimerez..."
+      },
+      {
+        "id": "title_popup",
+        "type": "text",
+        "label": "Titre popup",
+		"default": "Vous aimerez..."
+      }
+	],
+	"blocks": [
+	  {
+		"type": "ingredients",
+		"name": "ingrédient",
+		"settings": [
+		  {
+             "type": "text",
+             "id": "name",
+             "label": "Nom de l'ingrédients"
+          },
+    	  {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image correspondante"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+          },
+		  {
+			"type": "product",
+			"id": "product1",
+			"label": "produit popup 1"
+		  },
+		  {
+			"type": "product",
+			"id": "product2",
+			"label": "produit popup 2"
+		  },
+		  {
+			"type": "product",
+			"id": "product3",
+			"label": "produit popup 3"
+		  }
+		]
+	  },
+      {
+            "type": "letter",
+            "name": "Lettre",
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image de la lettre"
+              }
+            ]
+       }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

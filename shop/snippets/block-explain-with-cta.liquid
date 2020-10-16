@@ -1,0 +1,13 @@
+<div class="quizz-block">
+  <h2 class="">{{ block.settings.label }}</h2>
+  <div>
+    <button class="enterButton">{{ block.settings.cta }}</button>
+  </div>
+</div>
+<script>
+  function validateBlockExplainWithCta(currentBlock) {
+    $('.owl-next').click();
+    currentBlock++;
+    return currentBlock;
+  }
+</script>

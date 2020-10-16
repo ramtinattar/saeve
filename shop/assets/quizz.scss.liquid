@@ -1,0 +1,221 @@
+$black:black;
+$white:white;
+
+.quizz-container {
+  position: relative;
+  background:url('https://cdn.shopify.com/s/files/1/0209/8325/1008/files/diagnostic_step1.jpg?v=1548239020');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center top;
+  margin: 0 auto;
+  padding:30px;
+  #mainQuizz {
+    position: relative;
+    .quizz-block-container {
+      position: relative;
+      .quizz-block {
+        text-align: center;
+        width: 100%;
+        h2 {
+          margin: 0;
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .owl-nav {
+      display: none;
+    }
+  }
+  h2 {
+    font-size: 38px;
+    text-align:center;
+    margin:20px;
+    color:$black;
+    font-family: "Minion";
+    .logo-quizz {
+      max-width: 105px;
+      vertical-align: middle; 
+    }
+  }
+  h3 {
+    text-align:center;
+    font-family: "Minion";
+    font-weight:900;
+    font-size: 26px;
+    color:$black;
+  }
+  h4 {
+    text-align:center;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Roboto", arial;
+    color:$black;
+  }
+  .block-c {
+    text-align:center;
+    .inlineB {
+      display:inline-block; 
+    }
+    input {
+      -webkit-appearance: none;
+      border-radius: 0;
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid black;
+      font-size: 38px;
+      text-align: left;
+      margin: 0;
+      color: #000;
+      font-family: "Minion";
+    }
+    button {
+     margin-top:20px; 
+    }
+  }
+  .choice {
+    text-align:center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:55px;
+    padding-top:25px;
+    .unique-choice {
+      margin: 30px;
+      background: $white;
+      width: 220px;
+      height: 160px;
+      box-shadow: 0 3px 8px -3px rgba(0,0,0,0.3);
+      color: $black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5px 20px;
+      transition:.2s;
+      .choice-image {
+       margin-bottom:10px; 
+      }
+      h5 {
+        font-size:16px;
+        color:$black;
+        font-weight:900;
+      }
+      h6 {
+        font-size:12px;
+      }
+      &:hover {
+        box-shadow: 0 3px 22px -3px rgba(0,0,0,0.9);
+      }
+    }
+  }
+  .breadcrumb {
+    background:transparent;
+    left: calc(5% + 50px);
+    right:calc(5% + 50px);
+    width:calc(90% - 100px);
+    text-align: center;
+    display:flex;
+    z-index: 2;
+    max-width: 950px;
+    margin: auto;
+    margin-top:50px;
+    .breadcrumb-container {
+      display: inline-flex;
+      .breadcrumb-dot-container {
+        margin: auto;
+        display: inline-block;
+        position: relative;
+        border: 1px solid $black;
+        padding: 3pt;
+        border-radius: 50%;
+        top: -7px;
+        &.active {
+          border: 2px solid $black;
+          @media all and (min-width:450px) {
+            &:before {
+              display: block;
+              width: 109px;
+              height: 37px;
+              background: url("https://cdn.shopify.com/s/files/1/0209/8325/1008/files/h_47ab930d-3e69-41c6-b198-930425a43564.png?v=1548239867") no-repeat center;
+              content: "";
+              top: -25px;
+              left: -40px;
+              position: absolute; 
+            }
+          }
+        }
+        .breadcrumb-dot {
+          width: 20px;
+          height: 20px;
+          line-height:20px;
+          border-radius: 50%;
+        }
+      }
+      .breadcrumb-line {
+        height: 1px;
+        background: $black;
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        top: 7px;
+      }
+      &.last {
+        width: 0 !Important;
+        .breadcrumb-line {
+          display:none !Important;
+        }
+        .breadcrumb-dot-container {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .backButton {
+    position: absolute;
+    bottom: 80px;
+    z-index: 9;
+    left: 50%;
+    cursor: pointer;
+    display: none;
+    color: #000;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+  }
+  .quit-quizz {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media all and (max-width:1250px) {
+  .quizz-container .choice {
+    display:block;
+    .unique-choice {
+      vertical-align: middle;
+      display: inline-flex;
+    }
+  }
+}
+
+@media all and (max-width:700px) {
+  .quizz-container {
+    padding-left:0;
+    padding-right:0;
+    h3 { font-size:20px; }
+    h4 { font-size:14px; }  
+    .choice .unique-choice {
+      max-width: 45%;
+      margin: 4% 2%;
+      h5 {
+        font-size: 12px;
+        margin-bottom: 5px; 
+      }	
+      h6 {
+        font-size:10px; 
+      }
+    }
+  }
+}
